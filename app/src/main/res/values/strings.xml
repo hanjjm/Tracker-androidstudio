@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="kakao_app_key">274e57b9d986e93b4e6b6d585d78dc9e</string>
 </resources>
