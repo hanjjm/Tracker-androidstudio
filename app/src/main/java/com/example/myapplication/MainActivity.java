@@ -4,7 +4,6 @@ import android.content.Context;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.Signature;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -15,18 +14,24 @@ import android.widget.Toast;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.auth.KakaoSDK;
 import com.kakao.auth.Session;
+import com.kakao.network.ErrorResult;
+import com.kakao.usermgmt.UserManagement;
+import com.kakao.usermgmt.callback.MeResponseCallback;
+import com.kakao.usermgmt.callback.MeV2ResponseCallback;
+import com.kakao.usermgmt.response.MeV2Response;
+import com.kakao.usermgmt.response.model.UserProfile;
 import com.kakao.util.exception.KakaoException;
 import com.kakao.util.helper.log.Logger;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.List;
 
 import static com.kakao.util.helper.Utility.getPackageInfo;
 
 public class MainActivity extends Activity {
     private SessionCallback callback;
-    String token = "";
-    String name = "";
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -37,11 +42,15 @@ public class MainActivity extends Activity {
             KakaoSDK.init(new GlobalApplication.KakaoSDKAdapter());
         }
 
-        getKeyHash(this);
+       // getKeyHash(this);
 
         callback = new SessionCallback();
         Session.getCurrentSession().addCallback(callback);
         Session.getCurrentSession().checkAndImplicitOpen();
+
+       // requestMe();
+
+
     }
 
     @Override
@@ -61,9 +70,36 @@ public class MainActivity extends Activity {
     private class SessionCallback implements ISessionCallback {
         @Override
         public void onSessionOpened() {
-            Toast.makeText(MainActivity.this, "성공", Toast.LENGTH_SHORT).show();
-            goHomeActivity();
+            //Toast.makeText(MainActivity.this, "성공", Toast.LENGTH_SHORT).show();
+            //goHomeActivity();
             //redirectSignActivity();
+
+            UserManagement.getInstance().requestMe(new MeResponseCallback() {
+                @Override
+                public void onSessionClosed(ErrorResult errorResult) {
+
+                }
+
+                @Override
+                public void onNotSignedUp() {
+
+                }
+
+                @Override
+                public void onSuccess(UserProfile userProfile) {
+                    Logger.d("uUserProfile", userProfile.toString());
+                    //Toast.makeText(MainActivity.this, userProfile.toString() , Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    intent.putExtra("userProfileIntent", userProfile.toString());
+                    startActivity(intent);
+                    finish();
+                }
+            });
+
+
+
+
+
         }
 
         @Override
@@ -88,7 +124,7 @@ public class MainActivity extends Activity {
         finish();
     }
 
-    public static String getKeyHash(final Context context) {
+/*    public static String getKeyHash(final Context context) {
         PackageInfo packageInfo = getPackageInfo(context, PackageManager.GET_SIGNATURES);
         if (packageInfo == null)
             return null;
@@ -105,8 +141,35 @@ public class MainActivity extends Activity {
             }
         }
         return null;
-    }
+    }*/
 
+   /* private void requestMe() {
+        List<String> keys = new ArrayList<>();
+        keys.add("properties.nickname");
+        keys.add("properties.profile_image");
+        keys.add("kakao_account.email");
 
+        UserManagement.getInstance().me(keys, new MeV2ResponseCallback() {
+            @Override
+            public void onFailure(ErrorResult errorResult) {
+                String message = "failed to get user info. msg=" + errorResult;
+                Logger.d(message);
+            }
+
+            @Override
+            public void onSessionClosed(ErrorResult errorResult) {
+             //   redirectLoginActivity();
+            }
+
+            @Override
+            public void onSuccess(MeV2Response response) {
+                Logger.d("user id : " + response.getId());
+                Logger.d("email: " + response.getKakaoAccount().getEmail());
+                Logger.d("gender : " + response.getKakaoAccount().getGender());
+                Toast.makeText(MainActivity.this, response.getKakaoAccount().getEmail() , Toast.LENGTH_SHORT).show();
+            }
+
+        });
+    }*/
 
 }

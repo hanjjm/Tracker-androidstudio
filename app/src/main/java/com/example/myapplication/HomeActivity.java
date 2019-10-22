@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.LogoutResponseCallback;
@@ -15,6 +16,9 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        String userProfile = getIntent().getStringExtra("userProfileIntent");
+        Toast.makeText(this, userProfile , Toast.LENGTH_SHORT).show();
 
         Button logout = findViewById(R.id.button);
         logout.setOnClickListener(new View.OnClickListener() {
