@@ -25,6 +25,8 @@ import static com.kakao.util.helper.Utility.getPackageInfo;
 
 public class MainActivity extends Activity {
     private SessionCallback callback;
+    String token = "";
+    String name = "";
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
@@ -60,7 +62,7 @@ public class MainActivity extends Activity {
         @Override
         public void onSessionOpened() {
             Toast.makeText(MainActivity.this, "성공", Toast.LENGTH_SHORT).show();
-
+            goHomeActivity();
             //redirectSignActivity();
         }
 
@@ -70,11 +72,18 @@ public class MainActivity extends Activity {
             if(exception != null) {
                 Logger.e(exception);
             }
+           // redirectSignActivity();
         }
     }
 
     protected void redirectSignActivity() {
         final Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+
+    protected void goHomeActivity() {
+        final Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
         finish();
     }
@@ -97,5 +106,7 @@ public class MainActivity extends Activity {
         }
         return null;
     }
+
+
 
 }
