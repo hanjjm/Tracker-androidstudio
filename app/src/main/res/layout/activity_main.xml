@@ -6,12 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="468dp"
+        android:layout_height="773dp"
+        android:src="@drawable/back2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.kakao.usermgmt.LoginButton
         android="@+id/com_kakao_login"
-        android:layout_width="338dp"
+        android:layout_width="300dp"
         android:layout_height="52dp"
+        android:layout_marginBottom="500dp"
         android:layout_weight="1"
-        tools:layout_editor_absoluteX="36dp"
-        tools:layout_editor_absoluteY="577dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
 
 </android.support.constraint.ConstraintLayout>

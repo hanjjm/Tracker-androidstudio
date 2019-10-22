@@ -89,7 +89,7 @@ public class MainActivity extends Activity {
                 public void onSuccess(UserProfile userProfile) {
                     Logger.d("uUserProfile", userProfile.toString());
                     //Toast.makeText(MainActivity.this, userProfile.toString() , Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+                    Intent intent = new Intent(MainActivity.this, GPSActivity.class);
                     intent.putExtra("userProfileIntent", userProfile.toString());
                     startActivity(intent);
                     finish();
