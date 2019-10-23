@@ -10,9 +10,16 @@ import android.support.annotation.NonNull;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+
+
 public class GPSActivity extends AppCompatActivity implements HomeFragment.OnFragmentInteractionListener,
-        GPSFragment.OnFragmentInteractionListener,
-        MyPageFragment.OnFragmentInteractionListener {
+                                                              GPSFragment.OnFragmentInteractionListener,
+                                                              MyPageFragment.OnFragmentInteractionListener {
     private FragmentManager fragmentManager = getSupportFragmentManager();
     private FragmentTransaction transaction = fragmentManager.beginTransaction();
     private HomeFragment homeFragment = new HomeFragment();
@@ -24,6 +31,11 @@ public class GPSActivity extends AppCompatActivity implements HomeFragment.OnFra
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gps);
+
+        String nickname = getIntent().getStringExtra("NickName");
+        String Email = getIntent().getStringExtra("Email");
+
+        Toast.makeText(this, nickname, Toast.LENGTH_SHORT).show();
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);

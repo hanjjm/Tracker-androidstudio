@@ -88,9 +88,12 @@ public class MainActivity extends Activity {
                 @Override
                 public void onSuccess(UserProfile userProfile) {
                     Logger.d("uUserProfile", userProfile.toString());
+                    String userNickname = userProfile.getNickname();
+                    String userEmail = userProfile.getEmail();
                     //Toast.makeText(MainActivity.this, userProfile.toString() , Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, GPSActivity.class);
-                    intent.putExtra("userProfileIntent", userProfile.toString());
+                    intent.putExtra("NickName", userNickname);
+                    intent.putExtra("Email", userEmail);
                     startActivity(intent);
                     finish();
                 }
