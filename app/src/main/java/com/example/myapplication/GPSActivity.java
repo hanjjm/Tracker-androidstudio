@@ -10,7 +10,9 @@ import android.support.annotation.NonNull;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-public class GPSActivity extends AppCompatActivity implements HomeFragment.OnFragmentInteractionListener {
+public class GPSActivity extends AppCompatActivity implements HomeFragment.OnFragmentInteractionListener,
+        GPSFragment.OnFragmentInteractionListener,
+        MyPageFragment.OnFragmentInteractionListener {
     private FragmentManager fragmentManager = getSupportFragmentManager();
     private FragmentTransaction transaction = fragmentManager.beginTransaction();
     private HomeFragment homeFragment = new HomeFragment();
@@ -35,16 +37,18 @@ public class GPSActivity extends AppCompatActivity implements HomeFragment.OnFra
 
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
             switch (item.getItemId()) {
                 case R.id.navigation_home:
-                    transaction.replace(R.id.frameLayout, homeFragment).commitAllowingStateLoss();
+                    transaction = fragmentManager.beginTransaction();
+                    if(!homeFragment.isAdded()) transaction.replace(R.id.frameLayout, homeFragment).commitNowAllowingStateLoss();
                     break;
                 case R.id.navigation_dashboard:
-                    transaction.replace(R.id.frameLayout, gpsFragment).commitAllowingStateLoss();
+                    transaction = fragmentManager.beginTransaction();
+                    if(!gpsFragment.isAdded()) transaction.replace(R.id.frameLayout, gpsFragment).commitNowAllowingStateLoss();
                     break;
                 case R.id.navigation_notifications:
-                    transaction.replace(R.id.frameLayout, myPageFragment).commitAllowingStateLoss();
+                    transaction = fragmentManager.beginTransaction();
+                    if(!myPageFragment.isAdded()) transaction.replace(R.id.frameLayout, myPageFragment).commitNowAllowingStateLoss();
                     break;
             }
             return true;
