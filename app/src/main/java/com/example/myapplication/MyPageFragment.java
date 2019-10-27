@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 
 /**
@@ -58,13 +60,35 @@ public class MyPageFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+        String nick = null;
+
+        Bundle bundle = this.getArguments();
+        if(bundle != null) {
+            nick = bundle.getString("userNick");
+        }
+
+
+
+        Toast.makeText(getContext(), nick + "!@#", Toast.LENGTH_LONG);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_my_page, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_my_page, container, false);
+        Button test = view.findViewById(R.id.button2);
+
+        test.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getContext(), GPSActivity.nickname, Toast.LENGTH_LONG).show();
+            }
+        });
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

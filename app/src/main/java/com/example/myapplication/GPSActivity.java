@@ -25,17 +25,23 @@ public class GPSActivity extends AppCompatActivity implements HomeFragment.OnFra
     private HomeFragment homeFragment = new HomeFragment();
     private GPSFragment gpsFragment = new GPSFragment();
     private MyPageFragment myPageFragment = new MyPageFragment();
-
+    public static String nickname = null;
+    String Email = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gps);
 
-        String nickname = getIntent().getStringExtra("NickName");
-        String Email = getIntent().getStringExtra("Email");
+        nickname = getIntent().getStringExtra("NickName");
+        Email = getIntent().getStringExtra("Email");
 
         Toast.makeText(this, nickname, Toast.LENGTH_SHORT).show();
+
+       /* MyPageFragment nicks = new MyPageFragment();
+        Bundle bundle = new Bundle();
+        bundle.putString("userNick", nickname);
+        nicks.setArguments(bundle);*/
 
         BottomNavigationView navView = findViewById(R.id.nav_view);
         navView.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);

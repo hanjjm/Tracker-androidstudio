@@ -11,4 +11,10 @@
         android:layout_height="wrap_content"
         android:text="마이페이지 뜨나"
         android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="246dp"
+        android:layout_height="287dp"
+        android:text="Button" />
 </FrameLayout>
