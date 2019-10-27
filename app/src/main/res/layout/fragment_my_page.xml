@@ -1,20 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MyPageFragment">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="마이페이지 뜨나"
-        android:textSize="50dp" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="246dp"
-        android:layout_height="287dp"
-        android:text="Button" />
-</FrameLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            app:srcCompat="@drawable/kakao_default_profile_image"
+                            android:background="#EBD0C4"
+                            android:id="@+id/PImgBtn"
+                            android:layout_weight="5"/>
+
+                        <EditText
+                            android:gravity="center"
+                            android:background="#F1B0B0"
+                            android:textColor="#FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:inputType="textPersonName"
+                            android:ems="10"
+                            android:id="@+id/myName"
+                            android:textSize="16dp"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:background="#D68684"
+                            android:textColor="#FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:id="@+id/UniqueNTxt"
+                            android:textSize="16dp"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:text="Logout"
+                            android:textSize="16dp"
+                            android:background="#735360"
+                            android:textColor="#FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:id="@+id/LogoutBtn"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:text="Delete"
+                            android:textSize="16dp"
+                            android:background="#3E3947"
+                            android:textColor="#FFFFFF"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:id="@+id/DeleteBtn"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+            </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
