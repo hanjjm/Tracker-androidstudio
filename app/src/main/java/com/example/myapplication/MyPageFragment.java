@@ -1,16 +1,30 @@
 package com.example.myapplication;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Environment;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
 
 
 /**
@@ -81,6 +95,11 @@ public class MyPageFragment extends Fragment {
         // Inflate the layout for this fragment
 
         View view = inflater.inflate(R.layout.fragment_my_page, container, false);
+        final ImageButton myImage = view.findViewById(R.id.myImage);
+
+        LinkImage(myImage);
+
+
 
         TextView userName = view.findViewById(R.id.myName);
         userName.setText(GPSActivity.nickname + "님 안녕하세요.");
@@ -126,4 +145,44 @@ public class MyPageFragment extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
+
+
+    private class ImageDownload extends AsyncTask<String, Void, Void> {
+        @Override
+        protected Void doInBackground(String... params) {
+            return null;
+        }
+    }
+
+
+    Handler handler = new Handler();
+    public void LinkImage(final ImageButton imageButton){
+        if(GPSActivity.userImage.equals(""));
+        else {
+            new ImageDownload().execute(GPSActivity.userImage);
+
+            Thread t = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    // TODO Auto-generated method stub
+                    try {
+                        URL url = new URL(GPSActivity.userImage);
+                        InputStream is = url.openStream();
+                        final Bitmap bm = BitmapFactory.decodeStream(is);
+                        handler.post(new Runnable() {
+
+                            @Override
+                            public void run() {
+                                imageButton.setImageBitmap(bm);
+                            }
+                        });
+                        imageButton.setImageBitmap(bm);
+                    } catch (Exception e) {
+                    }
+                }
+            });
+            t.start();
+        }
+    }
+
 }

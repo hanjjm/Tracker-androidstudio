@@ -26,6 +26,9 @@ public class GPSActivity extends AppCompatActivity implements HomeFragment.OnFra
     private GPSFragment gpsFragment = new GPSFragment();
     private MyPageFragment myPageFragment = new MyPageFragment();
     public static String nickname = null;
+    public static String userImage = null;
+    public static String userID = null;
+
     String Email = null;
 
     @Override
@@ -35,8 +38,9 @@ public class GPSActivity extends AppCompatActivity implements HomeFragment.OnFra
 
         nickname = getIntent().getStringExtra("NickName");
         Email = getIntent().getStringExtra("Email");
-
-        Toast.makeText(this, nickname, Toast.LENGTH_SHORT).show();
+        userImage = getIntent().getStringExtra("picture");
+        userID = getIntent().getStringExtra("id");
+        Toast.makeText(this, userImage, Toast.LENGTH_SHORT).show();
 
        /* MyPageFragment nicks = new MyPageFragment();
         Bundle bundle = new Bundle();

@@ -90,10 +90,15 @@ public class MainActivity extends Activity {
                     Logger.d("uUserProfile", userProfile.toString());
                     String userNickname = userProfile.getNickname();
                     String userEmail = userProfile.getEmail();
+                    String imagePath = userProfile.getProfileImagePath();
+                    String id = userProfile.getUUID();
                     //Toast.makeText(MainActivity.this, userProfile.toString() , Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, GPSActivity.class);
                     intent.putExtra("NickName", userNickname);
                     intent.putExtra("Email", userEmail);
+                    intent.putExtra("picture", imagePath);
+                    intent.putExtra("id", id);
+                    Log.d("이미지", imagePath);
                     startActivity(intent);
                     finish();
                 }

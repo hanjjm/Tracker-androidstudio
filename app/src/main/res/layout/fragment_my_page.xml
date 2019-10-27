@@ -37,8 +37,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             app:srcCompat="@drawable/kakao_default_profile_image"
-                            android:background="#EBD0C4"
-                            android:id="@+id/PImgBtn"
+                            android:background="#FFFFFF"
+                            android:id="@+id/myImage"
                             android:layout_weight="5"/>
 
                         <EditText
