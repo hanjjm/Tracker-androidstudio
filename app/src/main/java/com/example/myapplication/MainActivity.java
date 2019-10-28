@@ -92,7 +92,6 @@ public class MainActivity extends Activity {
                     String userEmail = userProfile.getEmail();
                     String imagePath = userProfile.getProfileImagePath();
                     String id = userProfile.getUUID();
-                    //Toast.makeText(MainActivity.this, userProfile.toString() , Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, GPSActivity.class);
                     intent.putExtra("NickName", userNickname);
                     intent.putExtra("Email", userEmail);

@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -40,6 +41,7 @@ public class MyPageFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    public static int index = 0;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -76,17 +78,6 @@ public class MyPageFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
-        String nick = null;
-
-        Bundle bundle = this.getArguments();
-        if(bundle != null) {
-            nick = bundle.getString("userNick");
-        }
-
-
-
-        Toast.makeText(getContext(), nick + "!@#", Toast.LENGTH_LONG);
     }
 
     @Override
@@ -95,14 +86,22 @@ public class MyPageFragment extends Fragment {
         // Inflate the layout for this fragment
 
         View view = inflater.inflate(R.layout.fragment_my_page, container, false);
-        final ImageButton myImage = view.findViewById(R.id.myImage);
+        ImageButton myImage = view.findViewById(R.id.myImage);
+        TextView userName = view.findViewById(R.id.myName);
+        TextView textView = view.findViewById(R.id.emailText);
+        Button logout = view.findViewById(R.id.LogoutBtn);
 
         LinkImage(myImage);
-
-
-
-        TextView userName = view.findViewById(R.id.myName);
+        textView.setText(GPSActivity.email);
         userName.setText(GPSActivity.nickname + "님 안녕하세요.");
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         return view;
     }
@@ -154,21 +153,22 @@ public class MyPageFragment extends Fragment {
         }
     }
 
-
+    public static Thread t = null;
     Handler handler = new Handler();
     public void LinkImage(final ImageButton imageButton){
         if(GPSActivity.userImage.equals(""));
         else {
             new ImageDownload().execute(GPSActivity.userImage);
-
-            Thread t = new Thread(new Runnable() {
+            t = new Thread(new Runnable() {
                 @Override
                 public void run() {
                     // TODO Auto-generated method stub
                     try {
+                        Log.d("thread? : ", "얼마나 실행...");
                         URL url = new URL(GPSActivity.userImage);
                         InputStream is = url.openStream();
                         final Bitmap bm = BitmapFactory.decodeStream(is);
+
                         handler.post(new Runnable() {
 
                             @Override
