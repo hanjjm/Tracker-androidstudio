@@ -7,17 +7,17 @@
     tools:context=".HomeFragment">
 
     <TextView
-        android:id="@+id/resultText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="결과창"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
-
-    <TextView
         android:id="@+id/nowText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GPS 에 수신된 현재위치"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결과창"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ToggleButton
