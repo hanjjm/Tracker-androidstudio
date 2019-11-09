@@ -16,6 +16,7 @@ import com.kakao.auth.KakaoSDK;
 import com.kakao.auth.Session;
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
+import com.kakao.usermgmt.callback.LogoutResponseCallback;
 import com.kakao.usermgmt.callback.MeResponseCallback;
 import com.kakao.usermgmt.callback.MeV2ResponseCallback;
 import com.kakao.usermgmt.response.MeV2Response;
@@ -32,11 +33,12 @@ import static com.kakao.util.helper.Utility.getPackageInfo;
 
 public class MainActivity extends Activity {
     private SessionCallback callback;
-
+    private int index;
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        index = 0;
 
         if (KakaoSDK.getAdapter() == null) {
             KakaoSDK.init(new GlobalApplication.KakaoSDKAdapter());
@@ -50,6 +52,7 @@ public class MainActivity extends Activity {
 
        // requestMe();
 
+       //onClickLogout(); //이걸 주석 빼면 재로그인 해야함.
 
     }
 
@@ -102,10 +105,6 @@ public class MainActivity extends Activity {
                     finish();
                 }
             });
-
-
-
-
 
         }
 
@@ -178,5 +177,16 @@ public class MainActivity extends Activity {
 
         });
     }*/
+
+    private void onClickLogout() {
+        index++;
+        UserManagement.getInstance().requestLogout(new LogoutResponseCallback() {
+            @Override
+            public void onCompleteLogout() {
+                //redirectSignActivity();
+            }
+        });
+    }
+
 
 }
