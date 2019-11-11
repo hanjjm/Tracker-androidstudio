@@ -32,11 +32,11 @@ public class GPSFragment extends Fragment implements OnMapReadyCallback {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+    private static final int LOCATION_PERMISSION_REQUEST_CODE = 1000;
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
     private OnFragmentInteractionListener mListener;
-    private static final int LOCATION_PERMISSION_REQUEST_CODE = 1000;
     private FusedLocationSource locationSource;
 
     public GPSFragment() {
@@ -111,66 +111,6 @@ public class GPSFragment extends Fragment implements OnMapReadyCallback {
 
         return inflater.inflate(R.layout.fragment_g, container, false);
     }
-/*
-
-    @Override
-    public void onViewCreated(@NonNull View view,
-                              @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-  */
-/*      mapView = view.findViewById(R.id.map_view);
-        mapView.onCreate(savedInstanceState);*//*
-
-    }
-
-    @Override
-    public void onStart() {
-        super.onStart();
-        mapView.onStart();
-    }
-
-    @Override
-    public void onResume() {
-        super.onResume();
-        mapView.onResume();
-    }
-
-    @Override
-    public void onPause() {
-        super.onPause();
-        mapView.onPause();
-    }
-
-    @Override
-    public void onSaveInstanceState(Bundle outState) {
-        super.onSaveInstanceState(outState);
-        mapView.onSaveInstanceState(outState);
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        mapView.onStop();
-    }
-
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        mapView.onDestroy();
-    }
-
-    @Override
-    public void onLowMemory() {
-        super.onLowMemory();
-        mapView.onLowMemory();
-    }
-*/
-
-
-
-
-
-
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
@@ -195,8 +135,6 @@ public class GPSFragment extends Fragment implements OnMapReadyCallback {
         super.onDetach();
         mListener = null;
     }
-
-
 
     /**
      * This interface must be implemented1 by activities that contain this
