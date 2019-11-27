@@ -20,6 +20,8 @@ import com.kakao.usermgmt.callback.LogoutResponseCallback;
 import com.kakao.usermgmt.callback.MeResponseCallback;
 import com.kakao.usermgmt.callback.MeV2ResponseCallback;
 import com.kakao.usermgmt.response.MeV2Response;
+import com.kakao.usermgmt.response.model.User;
+import com.kakao.usermgmt.response.model.UserAccount;
 import com.kakao.usermgmt.response.model.UserProfile;
 import com.kakao.util.exception.KakaoException;
 import com.kakao.util.helper.log.Logger;
@@ -53,7 +55,7 @@ public class MainActivity extends Activity {
 
        // requestMe();
 
-       onClickLogout(); //이걸 주석 빼면 재로그인 해야함.
+       //onClickLogout(); //이걸 주석 빼면 재로그인 해야함.
 
     }
 
@@ -97,6 +99,8 @@ public class MainActivity extends Activity {
                     String imagePath = userProfile.getProfileImagePath();
                     Log.d("12321", "1");
                     Log.d("32123", "2");
+                    //UserAccount  = new UserAccount();
+                   // a.getGender()
                    // String age = userProfile.get
                     String id = userProfile.getUUID();
                     Intent intent = new Intent(MainActivity.this, GPSActivity.class);

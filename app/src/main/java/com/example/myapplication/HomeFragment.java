@@ -24,21 +24,30 @@ import android.widget.ToggleButton;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
+import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLDecoder;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
 
 import cz.msebera.android.httpclient.HttpResponse;
+import cz.msebera.android.httpclient.NameValuePair;
 import cz.msebera.android.httpclient.client.ClientProtocolException;
 import cz.msebera.android.httpclient.client.HttpClient;
 import cz.msebera.android.httpclient.client.entity.UrlEncodedFormEntity;
 import cz.msebera.android.httpclient.client.methods.HttpPost;
 import cz.msebera.android.httpclient.impl.client.DefaultHttpClient;
+import cz.msebera.android.httpclient.message.BasicNameValuePair;
 
 
 import java.net.HttpURLConnection;
@@ -138,16 +147,235 @@ public class HomeFragment extends Fragment implements LocationListener {
             }
         });
 
-        postData();
+        //2postData2();
+
+/*
+        String result = null;
+        try {
+            // Open the connection
+            URL url = new URL("http://mr-y.asuscomm.com:3000/upload");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("POST");
+            InputStream is = conn.getInputStream();
+
+            // Get the stream
+            StringBuilder builder = new StringBuilder();
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                builder.append(line);
+            }
+
+            // Set the result
+            result = builder.toString();
+        }
+        catch (Exception e) {
+            // Error calling the rest api
+            Log.e("REST_API", "GET method failed: " + e.getMessage());
+            e.printStackTrace();
+        }*/
+
+
+        //postData3();
+
+        final String result = "";
+        new AsyncTask<Void,Void,Void>(){
+            @Override
+            protected void onPreExecute() {
+                super.onPreExecute();
+               // String strUrl = "http://www.naver.com"; //탐색하고 싶은 URL이다.
+            }
+
+            @Override
+            protected Void doInBackground(Void... voids) {
+                try{
+                    URL Url = new URL("http://mr-y.asuscomm.com:3000/users"); // URL화 한다.
+                    HttpURLConnection conn = (HttpURLConnection) Url.openConnection(); // URL을 연결한 객체 생성.
+                    conn.setRequestMethod("POST"); // get방식 통신
+                    conn.setDoOutput(true); // 쓰기모드 지정
+                    conn.setDoInput(true); // 읽기모드 지정
+                    conn.setUseCaches(false); // 캐싱데이터를 받을지 안받을지
+                    conn.setDefaultUseCaches(false); // 캐싱데이터 디폴트 값 설정
+                    conn.setRequestProperty("Content-Type", "application/json");
+                    conn.setRequestProperty("Accept", "application/json");
+                    String strCookie = conn.getHeaderField("Set-Cookie"); //쿠키데이터 보관
+
+
+                    //Toast.makeText(getContext(), "123", Toast.LENGTH_LONG).show();
+                    InputStream is = conn.getInputStream(); //input스트림 개방
+
+                 //   StringBuilder builder = new StringBuilder(); //문자열을 담기 위한 객체
+                   // BufferedReader reader = new BufferedReader(new InputStreamReader(is,"UTF-8")); //문자열 셋 세팅
+                  //  String line;
+
+                   /* while ((line = reader.readLine()) != null) {
+                        builder.append(line+ "\n");
+                    }*/
+
+                    JSONObject jsonObject = new JSONObject();
+                    jsonObject.accumulate("ID", "143");
+                    jsonObject.accumulate("age", "123");
+                    jsonObject.accumulate("gender", "W");
+                    // convert JSONObject to JSON to String
+                    String result = jsonObject.toString();
+
+                    OutputStream os = conn.getOutputStream();
+                    os.write(result.getBytes("UTF-8"));
+                    os.flush();
+                    os.close();
+
+                   // String result = builder.toString();
+                    Log.d("test123", result);
+                }catch(MalformedURLException | ProtocolException exception) {
+                    exception.printStackTrace();
+                }catch(IOException io){
+                    io.printStackTrace();
+                }catch(JSONException e) {
+                    e.printStackTrace();
+                }
+                return null;
+            }
+
+            @Override
+            protected void onPostExecute(Void aVoid) {
+                super.onPostExecute(aVoid);
+                Log.d("test111", result);
+                System.out.println(result);
+            }
+        }.execute();
+
+
+
+
+
 
         return view;
     }
 
-    private void postData() {
+
+    public static String postData(){
+        InputStream is = null;
+        String result = "";
+        try {
+            URL urlCon = new URL("http://mr-y.asuscomm.com:3000/upload");
+            HttpURLConnection httpCon = (HttpURLConnection)urlCon.openConnection();
+
+            String json = "";
+
+            // build jsonObject
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.accumulate("age", "12");
+            jsonObject.accumulate("gender", "123");
+            jsonObject.accumulate("POINT", "(123.13, 125.41");
+            jsonObject.accumulate("time", "123");
+
+            // convert JSONObject to JSON to String
+            json = jsonObject.toString();
+
+
+            // ObjectMapper mapper = new ObjectMapper();
+            // json = mapper.writeValueAsString(person);
+
+            // Set some headers to inform server about the type of the content
+            httpCon.setRequestProperty("Accept", "application/json");
+            httpCon.setRequestProperty("Content-type", "application/json");
+
+            // OutputStream으로 POST 데이터를 넘겨주겠다는 옵션.
+            httpCon.setDoOutput(true);
+            // InputStream으로 서버로 부터 응답을 받겠다는 옵션.
+            httpCon.setDoInput(true);
+
+            OutputStream os = httpCon.getOutputStream();
+            os.write(json.getBytes("euc-kr"));
+            os.flush();
+            // receive response as inputStream
+            try {
+                is = httpCon.getInputStream();
+                // convert inputstream to string
+                //if(is != null)
+                //    result = convertInputStreamToString(is);
+                //else
+                 //   result = "Did not work!";
+            }
+            catch (IOException e) {
+                e.printStackTrace();
+            }
+            finally {
+                httpCon.disconnect();
+            }
+        }
+        catch (IOException e) {
+            e.printStackTrace();
+        }
+        catch (Exception e) {
+            Log.d("InputStream", e.getLocalizedMessage());
+        }
+
+        return result;
+
+    }
+
+    public static void postData2() {
+        String URL = "http://mr-y.asuscomm.com:3000/upload";
+        HttpClient httpclient = new DefaultHttpClient();
+        HttpPost httppost = new HttpPost(URL);
+
+        try {
+            // 아래처럼 적절히 응용해서 데이터형식을 넣으시고
+            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
+            nameValuePairs.add(new BasicNameValuePair("age", "12345"));
+            nameValuePairs.add(new BasicNameValuePair("gender", "man"));
+            nameValuePairs.add(new BasicNameValuePair("POINT", "(12345, 1231)"));
+            nameValuePairs.add(new BasicNameValuePair("time", "123"));
+            httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
+
+            //HTTP Post 요청 실행
+            HttpResponse response = httpclient.execute(httppost);
+
+       } catch (ClientProtocolException e) {
+            // TODO Auto-generated catch block
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+        }
+    }
+
+
+    public static void postData3() {
+        try {
+            URL url = new URL("http://mr-y.asuscomm.com:3000/upload");
+            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("POST"); //전송방식
+            connection.setDoOutput(true);       //데이터를 쓸 지 설정
+            connection.setDoInput(true);        //데이터를 읽어올지 설정
+            connection.setRequestProperty("Content-Type", "application/json");
+            connection.setRequestProperty("Accept", "application/json");
+
+            JSONObject jsonObject = new JSONObject();
+            jsonObject.accumulate("age", "12");
+            jsonObject.accumulate("gender", "123");
+            jsonObject.accumulate("POINT", "(123.13, 125.41");
+            jsonObject.accumulate("time", "123");
+
+            // convert JSONObject to JSON to String
+            String json = jsonObject.toString();
+            Log.d("abc", json);
+            OutputStreamWriter os = new OutputStreamWriter(connection.getOutputStream());
+            os.write(json); // 출력 스트림에 출력.
+            os.flush(); // 출력 스트림을 플러시(비운다)하고 버퍼링 된 모든 출력 바이트를 강제 실행.
+            os.close();
+        } catch(Exception e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
+
+/*    private void postData() {
 
         HttpClient client = new DefaultHttpClient();
         HttpPost post = new HttpPost("http://192.168.219.101:8090/readus/insertuserinfo.do");
-        /*ArrayList<> nameValues =new ArrayList<>();*/
+        *//*ArrayList<> nameValues =new ArrayList<>();*//*
 
 
         JSONObject data = new JSONObject();
@@ -157,13 +385,13 @@ public class HomeFragment extends Fragment implements LocationListener {
             e.getStackTrace();
         }
 
-        try {
+        try {*/
             //Post방식으로 넘길 값들을 각각 지정을 해주어야 한다.
             /*nameValues.add(new BasicNameValuePair(
                     "userId", URLDecoder.decode(userId, "UTF-8")));
             nameValues.add(new BasicNameValuePair(
                     "userName", URLDecoder.decode(userName, "UTF-8")));*/
-            data.accumulate("age", 123);
+           /* data.accumulate("age", 123);
             data.accumulate("gender", "man");
             data.accumulate("X", "12.3451");
             data.accumulate("Y", "324.232");
@@ -189,7 +417,7 @@ public class HomeFragment extends Fragment implements LocationListener {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
