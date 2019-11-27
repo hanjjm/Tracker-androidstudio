@@ -29,6 +29,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 
+
 import static com.kakao.util.helper.Utility.getPackageInfo;
 
 public class MainActivity extends Activity {
@@ -52,7 +53,7 @@ public class MainActivity extends Activity {
 
        // requestMe();
 
-       //onClickLogout(); //이걸 주석 빼면 재로그인 해야함.
+       onClickLogout(); //이걸 주석 빼면 재로그인 해야함.
 
     }
 
@@ -90,16 +91,21 @@ public class MainActivity extends Activity {
 
                 @Override
                 public void onSuccess(UserProfile userProfile) {
-                    Logger.d("uUserProfile", userProfile.toString());
+                    Log.d("UserProfile", userProfile.toString());
                     String userNickname = userProfile.getNickname();
                     String userEmail = userProfile.getEmail();
                     String imagePath = userProfile.getProfileImagePath();
+                    Log.d("12321", "1");
+                    Log.d("32123", "2");
+                   // String age = userProfile.get
                     String id = userProfile.getUUID();
                     Intent intent = new Intent(MainActivity.this, GPSActivity.class);
                     intent.putExtra("NickName", userNickname);
                     intent.putExtra("Email", userEmail);
                     intent.putExtra("picture", imagePath);
                     intent.putExtra("id", id);
+                    //intent.putExtra("age", age);
+
                     Log.d("이미지", imagePath);
                     startActivity(intent);
                     finish();

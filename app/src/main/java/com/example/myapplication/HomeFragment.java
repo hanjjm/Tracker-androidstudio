@@ -8,6 +8,7 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
@@ -20,8 +21,28 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLDecoder;
 import java.util.List;
 
+import javax.net.ssl.HttpsURLConnection;
+
+import cz.msebera.android.httpclient.HttpResponse;
+import cz.msebera.android.httpclient.client.ClientProtocolException;
+import cz.msebera.android.httpclient.client.HttpClient;
+import cz.msebera.android.httpclient.client.entity.UrlEncodedFormEntity;
+import cz.msebera.android.httpclient.client.methods.HttpPost;
+import cz.msebera.android.httpclient.impl.client.DefaultHttpClient;
+
+
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -117,8 +138,57 @@ public class HomeFragment extends Fragment implements LocationListener {
             }
         });
 
+        postData();
 
         return view;
+    }
+
+    private void postData() {
+
+        HttpClient client = new DefaultHttpClient();
+        HttpPost post = new HttpPost("http://192.168.219.101:8090/readus/insertuserinfo.do");
+        /*ArrayList<> nameValues =new ArrayList<>();*/
+
+
+        JSONObject data = new JSONObject();
+        try {
+
+        } catch (JSONException e) {
+            e.getStackTrace();
+        }
+
+        try {
+            //Post방식으로 넘길 값들을 각각 지정을 해주어야 한다.
+            /*nameValues.add(new BasicNameValuePair(
+                    "userId", URLDecoder.decode(userId, "UTF-8")));
+            nameValues.add(new BasicNameValuePair(
+                    "userName", URLDecoder.decode(userName, "UTF-8")));*/
+            data.accumulate("age", 123);
+            data.accumulate("gender", "man");
+            data.accumulate("X", "12.3451");
+            data.accumulate("Y", "324.232");
+            data.accumulate("time", "12:22:33");
+            //HttpPost에 넘길 값을들 Set해주기
+            post.setEntity(
+                    new UrlEncodedFormEntity(
+                            data, "UTF-8"));
+        } catch (Exception ex) {
+            Log.e("Insert Log", ex.toString());
+        }
+
+        try {
+            //설정한 URL을 실행시키기
+            HttpResponse response = client.execute(post);
+            //통신 값을 받은 Log 생성. (200이 나오는지 확인할 것~) 200이 나오면 통신이 잘 되었다는 뜻!
+            Log.i("Insert Log", "response.getStatusCode:" + response.getStatusLine().getStatusCode());
+
+        } catch (ClientProtocolException e) {
+            e.printStackTrace();
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     // TODO: Rename method, update argument and hook method into UI event
