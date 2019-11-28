@@ -11,9 +11,11 @@ import android.util.Base64;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.kakao.auth.AccessTokenCallback;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.auth.KakaoSDK;
 import com.kakao.auth.Session;
+import com.kakao.auth.authorization.accesstoken.AccessToken;
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.LogoutResponseCallback;
@@ -53,9 +55,9 @@ public class MainActivity extends Activity {
         Session.getCurrentSession().addCallback(callback);
         Session.getCurrentSession().checkAndImplicitOpen();
 
-       // requestMe();
+        requestMe();
 
-       //onClickLogout(); //이걸 주석 빼면 재로그인 해야함.
+      // onClickLogout(); //이걸 주석 빼면 재로그인 해야함.
 
     }
 
@@ -97,11 +99,12 @@ public class MainActivity extends Activity {
                     String userNickname = userProfile.getNickname();
                     String userEmail = userProfile.getEmail();
                     String imagePath = userProfile.getProfileImagePath();
+
                     Log.d("12321", "1");
-                    Log.d("32123", "2");
-                    //UserAccount  = new UserAccount();
-                   // a.getGender()
-                   // String age = userProfile.get
+
+                  /*  UserAccount a = new UserAccount();
+                    a.getGender()*/
+                    // String age = userProfile.get
                     String id = userProfile.getUUID();
                     Intent intent = new Intent(MainActivity.this, GPSActivity.class);
                     intent.putExtra("NickName", userNickname);
@@ -159,12 +162,15 @@ public class MainActivity extends Activity {
         return null;
     }*/
 
-   /* private void requestMe() {
+    private void requestMe() {
         List<String> keys = new ArrayList<>();
         keys.add("properties.nickname");
         keys.add("properties.profile_image");
         keys.add("kakao_account.email");
-
+        keys.add("kakao_account.gender");
+        keys.add("kakao_account.age_range");
+        //keys.add("kakao_account.age_range");
+        //keys.add("kakao_account.gender");
         UserManagement.getInstance().me(keys, new MeV2ResponseCallback() {
             @Override
             public void onFailure(ErrorResult errorResult) {
@@ -179,14 +185,16 @@ public class MainActivity extends Activity {
 
             @Override
             public void onSuccess(MeV2Response response) {
-                Logger.d("user id : " + response.getId());
-                Logger.d("email: " + response.getKakaoAccount().getEmail());
-                Logger.d("gender : " + response.getKakaoAccount().getGender());
-                Toast.makeText(MainActivity.this, response.getKakaoAccount().getEmail() , Toast.LENGTH_SHORT).show();
+             //   Log.d("user id : " ,response.getId());
+
+                Log.d("email: " , response.getKakaoAccount().getAgeRange().toString());
+                //여기서 보내기
+               // Log.d("gender : " , response.getKakaoAccount().getAgeRange().toString());
+               // Toast.makeText(MainActivity.this, response.getKakaoAccount().getGender().toString(), Toast.LENGTH_SHORT).show();
             }
 
         });
-    }*/
+    }
 
     private void onClickLogout() {
         index++;
@@ -197,6 +205,28 @@ public class MainActivity extends Activity {
             }
         });
     }
+
+/*    private void handleScopeError(UserAccount account) {
+        List<String> neededScopes = new ArrayList<>();
+        if (account.needsScopeAgeRange()) {
+            neededScopes.add("ageRange");
+        }
+        if (account.needsScopeGender()) {
+            neededScopes.add("gender");
+        }
+        Session.getCurrentSession().updateScopes(this, neededScopes, new
+                AccessTokenCallback() {
+                    @Override
+                    public void onAccessTokenReceived(AccessToken accessToken) {
+                        // 유저에게 성공적으로 동의를 받음. 토큰을 재발급 받게 됨.
+                    }
+
+                    @Override
+                    public void onAccessTokenFailure(ErrorResult errorResult) {
+                        // 동의 얻기 실패
+                    }
+                });
+    }*/
 
 
 }
