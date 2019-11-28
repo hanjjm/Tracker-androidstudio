@@ -10,6 +10,7 @@ import android.location.LocationManager;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
@@ -62,6 +63,8 @@ import java.net.URL;
 import java.util.Map;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -80,6 +83,8 @@ public class HomeFragment extends Fragment implements LocationListener {
     LocationManager lm;
     TextView textView;
     ToggleButton toggleButton;
+
+    MyTimer myTimer;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -116,6 +121,7 @@ public class HomeFragment extends Fragment implements LocationListener {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        myTimer = new MyTimer(5000, 1000);
     }
 
     @Override
@@ -148,6 +154,7 @@ public class HomeFragment extends Fragment implements LocationListener {
                                 100, // 통지사이의 최소 시간간격 (miliSecond)
                                 1, // 통지사이의 최소 변경거리 (m)
                                 mLocationListener);
+
                     }else{
                         textView.setText("위치정보 미수신중");
                         //lm.removeUpdates(mLocationListener);  //  미수신할때는 반드시 자원해체를 해주어야 한다.
@@ -156,17 +163,20 @@ public class HomeFragment extends Fragment implements LocationListener {
                 }
             }
         });
-        
-        String url = "http://mr-y.asuscomm.com:3000/upload ";
+        final String url = "http://mr-y.asuscomm.com:3000/users ";
 
-        ContentValues values = new ContentValues();
-        values.put("ID", "204");
+        final ContentValues values = new ContentValues();
+        values.put("id", "204");
         values.put("age", "24");
         values.put("gender", "W");
 
+        values.put("id", "444");
+        values.put("gender", "white Yeon");
+
+
         // AsyncTask를 통해 HttpURLConnection 수행.
-        NetworkTask networkTask = new NetworkTask(url, values);
-        networkTask.execute();
+        /*NetworkTask networkTask = new NetworkTask(url, values);
+        networkTask.execute();*/
 
         return view;
     }
@@ -723,3 +733,21 @@ public class HomeFragment extends Fragment implements LocationListener {
         Log.d("test999", result);
 
 */
+
+class MyTimer extends CountDownTimer
+{
+    public MyTimer(long millisInFuture, long countDownInterval)
+    {
+        super(millisInFuture, countDownInterval);
+    }
+
+    @Override
+    public void onTick(long millisUntilFinished) {
+        //textView.setText(millisUntilFinished/1000 + " 초");
+    }
+
+    @Override
+    public void onFinish() {
+       // textView.setText("0 초");
+    }
+}
