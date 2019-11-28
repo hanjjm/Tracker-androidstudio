@@ -173,6 +173,18 @@ public class HomeFragment extends Fragment implements LocationListener {
         values.put("id", "444");
         values.put("gender", "white Yeon");
 
+        Timer timer = new Timer();
+
+        TimerTask TT = new TimerTask() {
+            @Override
+            public void run() {
+                NetworkTask networkTask = new NetworkTask(url, values);
+                networkTask.execute();
+            }
+        };
+
+        timer.schedule(TT, 0, 5000); //Timer 실행
+        //timer.cancel();//타이머 종료
 
         // AsyncTask를 통해 HttpURLConnection 수행.
         /*NetworkTask networkTask = new NetworkTask(url, values);

@@ -1,0 +1,343 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:2:1-40:12
+MERGED from [com.kakao.sdk:usermgmt:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/e5af4aea09c806c22727988587b55398/usermgmt-1.14.0/AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:design:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:2:1-40:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/88180c2d9df321ed403965b1f5904015/constraint-layout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/07ec705aed5324b71d72c4292188ba58/animated-vector-drawable-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/eef6aeb86cd4abc591f340e9ebffbc25/support-vector-drawable-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/54fb435fa85e388b84d7ee2d18ebdb84/play-services-location-16.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/579d6225c14ef5dc52d859b502a46d06/play-services-places-placereport-16.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/cc96cf76523c8c718865861a59e9270b/play-services-tasks-16.0.1/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1da86a45a12dd77e49bb6d007f1c05e7/play-services-basement-16.0.1/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a34a62e715473ef2301dd478b244c935/support-v4-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:2:1-22:12
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2c2719b22890890f5ae6a51c577cf1e6/support-fragment-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/cbc9fded8b0ca2dc6b55abe24b8dd624/recyclerview-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1334fe890717dc3473dc186f28449ae9/support-core-ui-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/51316cf1e90ac9ba1040508849baa486/support-core-utils-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/c5d3c2766ada7a1573158f87d282c560/transition-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/3637ad7267aebf352258eb32830074ae/support-media-compat-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/ad62f407f0f82b0a54b4d08f147faaa7/loader-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/9e47cc7119ced64ae9076bee16f6f474/viewpager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/383ad2c48ccebde577332ae7ce906c52/coordinatorlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/aabad928b9dfc3bb4f99a8e919d7ca2a/drawerlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d777efb7f005f4061664eb152e4e4155/slidingpanelayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/378cad5251b7bf9290fb2bb3c5781307/customview-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a7cb32bf2478ccd8ed752b2b8a998b8f/swiperefreshlayout-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/11902811a1e20f50ecac97c485be82b1/asynclayoutinflater-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f993d148e999fdf956a4937ae88c6ee1/versionedparcelable-28.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/16e10458eb3d86dce547be2d4dce65a9/cursoradapter-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67b0ea41bb31f1300bd726681636eb0e/cardview-v7-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.naver.maps:geometry:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/bb3ecdc91d2b35a979afba1428f12a58/geometry-1.1.1/AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a4cce78b48541915b29a77ed3286103c/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d2514de441a98c98e63d23342e697e1c/documentfile-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/587d4b4ba2bee95fa70ebde7fdef163e/localbroadcastmanager-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6649028815494b2aeabe1bc5c2405c56/print-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/5e2b7336b65fd01a7d1759b63ce95e82/viewmodel-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/5e443312ff8e9912636de42e05adc2a8/interpolator-28.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/bde0a02c7eaeb68bbbbe9daba8b5a4d3/livedata-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/80a25cd447b6f67296c411c5c16059bb/livedata-core-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a9f3caa807bbac705342bf916bae7e9b/runtime-1.1.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/19b99b191eb443463c1796c8fa5cbb1c/relinker-1.3.1/AndroidManifest.xml:2:1-7:12
+MERGED from [com.kakao.sdk:network:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f64bfe979dca1b83bc2efd8417a1f959/network-1.14.0/AndroidManifest.xml:2:1-11:12
+MERGED from [com.kakao.sdk:util:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d16ef2356e25f991472789823598456b/util-1.14.0/AndroidManifest.xml:2:1-14:12
+INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:2:1-40:12
+INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:2:1-40:12
+	package
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:4:5-40
+		INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:2:1-40:12
+		INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:2:1-40:12
+		INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:6:5-67
+MERGED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:18:5-67
+MERGED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:18:5-67
+	android:name
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:7:5-79
+MERGED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:19:5-79
+MERGED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:7:22-76
+uses-permission-sdk-23#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:8:5-86
+	android:name
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:8:29-83
+application
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:10:5-38:19
+MERGED from [com.android.support:design:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:22:5-38:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/88180c2d9df321ed403965b1f5904015/constraint-layout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/88180c2d9df321ed403965b1f5904015/constraint-layout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/54fb435fa85e388b84d7ee2d18ebdb84/play-services-location-16.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/54fb435fa85e388b84d7ee2d18ebdb84/play-services-location-16.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/579d6225c14ef5dc52d859b502a46d06/play-services-places-placereport-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/579d6225c14ef5dc52d859b502a46d06/play-services-places-placereport-16.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/cc96cf76523c8c718865861a59e9270b/play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/cc96cf76523c8c718865861a59e9270b/play-services-tasks-16.0.1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1da86a45a12dd77e49bb6d007f1c05e7/play-services-basement-16.0.1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1da86a45a12dd77e49bb6d007f1c05e7/play-services-basement-16.0.1/AndroidManifest.xml:22:5-26:19
+MERGED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:11:5-20:19
+MERGED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:11:5-20:19
+MERGED from [com.android.support:support-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f993d148e999fdf956a4937ae88c6ee1/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f993d148e999fdf956a4937ae88c6ee1/versionedparcelable-28.0.0/AndroidManifest.xml:22:5-23:19
+	android:supportsRtl
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:17:9-35
+	android:label
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:15:9-41
+	android:appComponentFactory
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:13:9-53
+		REJECTED from [com.android.support:support-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+	android:roundIcon
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:16:9-54
+	android:icon
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:14:9-43
+	android:allowBackup
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:18:9-40
+	tools:replace
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:19:9-52
+	android:name
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:11:9-42
+activity#com.example.myapplication.GPSActivity
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:20:9-22:67
+	android:label
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:22:13-55
+	android:name
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:21:13-40
+activity#com.example.myapplication.HomeActivity
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:23:9-49
+	android:name
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:23:19-47
+activity#com.example.myapplication.MainActivity
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:24:9-30:20
+	android:name
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:24:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:28:27-74
+meta-data#com.kakao.sdk.AppKey
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:32:9-34:53
+	android:value
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:34:13-50
+	android:name
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:33:13-48
+meta-data#com.naver.maps.map.CLIENT_ID
+ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:35:9-37:42
+	android:value
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:37:13-39
+	android:name
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:36:13-56
+uses-sdk
+INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+MERGED from [com.kakao.sdk:usermgmt:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/e5af4aea09c806c22727988587b55398/usermgmt-1.14.0/AndroidManifest.xml:10:5-12:41
+MERGED from [com.kakao.sdk:usermgmt:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/e5af4aea09c806c22727988587b55398/usermgmt-1.14.0/AndroidManifest.xml:10:5-12:41
+MERGED from [com.android.support:design:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/88180c2d9df321ed403965b1f5904015/constraint-layout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/88180c2d9df321ed403965b1f5904015/constraint-layout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/07ec705aed5324b71d72c4292188ba58/animated-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/07ec705aed5324b71d72c4292188ba58/animated-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/eef6aeb86cd4abc591f340e9ebffbc25/support-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/eef6aeb86cd4abc591f340e9ebffbc25/support-vector-drawable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/54fb435fa85e388b84d7ee2d18ebdb84/play-services-location-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/54fb435fa85e388b84d7ee2d18ebdb84/play-services-location-16.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/579d6225c14ef5dc52d859b502a46d06/play-services-places-placereport-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/579d6225c14ef5dc52d859b502a46d06/play-services-places-placereport-16.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/cc96cf76523c8c718865861a59e9270b/play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/cc96cf76523c8c718865861a59e9270b/play-services-tasks-16.0.1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1da86a45a12dd77e49bb6d007f1c05e7/play-services-basement-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1da86a45a12dd77e49bb6d007f1c05e7/play-services-basement-16.0.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a34a62e715473ef2301dd478b244c935/support-v4-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a34a62e715473ef2301dd478b244c935/support-v4-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2c2719b22890890f5ae6a51c577cf1e6/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2c2719b22890890f5ae6a51c577cf1e6/support-fragment-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/cbc9fded8b0ca2dc6b55abe24b8dd624/recyclerview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/cbc9fded8b0ca2dc6b55abe24b8dd624/recyclerview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1334fe890717dc3473dc186f28449ae9/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1334fe890717dc3473dc186f28449ae9/support-core-ui-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/51316cf1e90ac9ba1040508849baa486/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/51316cf1e90ac9ba1040508849baa486/support-core-utils-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/c5d3c2766ada7a1573158f87d282c560/transition-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/c5d3c2766ada7a1573158f87d282c560/transition-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/3637ad7267aebf352258eb32830074ae/support-media-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/3637ad7267aebf352258eb32830074ae/support-media-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/ad62f407f0f82b0a54b4d08f147faaa7/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/ad62f407f0f82b0a54b4d08f147faaa7/loader-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/9e47cc7119ced64ae9076bee16f6f474/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/9e47cc7119ced64ae9076bee16f6f474/viewpager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/383ad2c48ccebde577332ae7ce906c52/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/383ad2c48ccebde577332ae7ce906c52/coordinatorlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/aabad928b9dfc3bb4f99a8e919d7ca2a/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/aabad928b9dfc3bb4f99a8e919d7ca2a/drawerlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d777efb7f005f4061664eb152e4e4155/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d777efb7f005f4061664eb152e4e4155/slidingpanelayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/378cad5251b7bf9290fb2bb3c5781307/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/378cad5251b7bf9290fb2bb3c5781307/customview-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a7cb32bf2478ccd8ed752b2b8a998b8f/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a7cb32bf2478ccd8ed752b2b8a998b8f/swiperefreshlayout-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/11902811a1e20f50ecac97c485be82b1/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/11902811a1e20f50ecac97c485be82b1/asynclayoutinflater-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f993d148e999fdf956a4937ae88c6ee1/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f993d148e999fdf956a4937ae88c6ee1/versionedparcelable-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/16e10458eb3d86dce547be2d4dce65a9/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/16e10458eb3d86dce547be2d4dce65a9/cursoradapter-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67b0ea41bb31f1300bd726681636eb0e/cardview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67b0ea41bb31f1300bd726681636eb0e/cardview-v7-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.naver.maps:geometry:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/bb3ecdc91d2b35a979afba1428f12a58/geometry-1.1.1/AndroidManifest.xml:7:5-9:41
+MERGED from [com.naver.maps:geometry:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/bb3ecdc91d2b35a979afba1428f12a58/geometry-1.1.1/AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a4cce78b48541915b29a77ed3286103c/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a4cce78b48541915b29a77ed3286103c/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d2514de441a98c98e63d23342e697e1c/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d2514de441a98c98e63d23342e697e1c/documentfile-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/587d4b4ba2bee95fa70ebde7fdef163e/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/587d4b4ba2bee95fa70ebde7fdef163e/localbroadcastmanager-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6649028815494b2aeabe1bc5c2405c56/print-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/6649028815494b2aeabe1bc5c2405c56/print-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/5e2b7336b65fd01a7d1759b63ce95e82/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/5e2b7336b65fd01a7d1759b63ce95e82/viewmodel-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/5e443312ff8e9912636de42e05adc2a8/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/5e443312ff8e9912636de42e05adc2a8/interpolator-28.0.0/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/bde0a02c7eaeb68bbbbe9daba8b5a4d3/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/bde0a02c7eaeb68bbbbe9daba8b5a4d3/livedata-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/80a25cd447b6f67296c411c5c16059bb/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/80a25cd447b6f67296c411c5c16059bb/livedata-core-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a9f3caa807bbac705342bf916bae7e9b/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/a9f3caa807bbac705342bf916bae7e9b/runtime-1.1.1/AndroidManifest.xml:20:5-44
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/19b99b191eb443463c1796c8fa5cbb1c/relinker-1.3.1/AndroidManifest.xml:5:5-43
+MERGED from [com.getkeepsafe.relinker:relinker:1.3.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/19b99b191eb443463c1796c8fa5cbb1c/relinker-1.3.1/AndroidManifest.xml:5:5-43
+MERGED from [com.kakao.sdk:network:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f64bfe979dca1b83bc2efd8417a1f959/network-1.14.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:network:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f64bfe979dca1b83bc2efd8417a1f959/network-1.14.0/AndroidManifest.xml:7:5-9:41
+MERGED from [com.kakao.sdk:util:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d16ef2356e25f991472789823598456b/util-1.14.0/AndroidManifest.xml:10:5-12:41
+MERGED from [com.kakao.sdk:util:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d16ef2356e25f991472789823598456b/util-1.14.0/AndroidManifest.xml:10:5-12:41
+INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+uses-feature#0x00020000
+ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:11:5-13:35
+	android:glEsVersion
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:12:9-41
+	android:required
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:13:9-32
+uses-feature#android.hardware.wifi
+ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:14:5-16:36
+	android:required
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:16:9-33
+	android:name
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:15:9-45
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:20:5-76
+	android:name
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:20:22-73
+activity#com.naver.maps.map.app.LegendActivity
+ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:23:9-27:51
+	android:label
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:26:13-52
+	android:configChanges
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:25:13-91
+	android:theme
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:27:13-48
+	android:name
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:24:13-65
+activity#com.naver.maps.map.app.LegalNoticeActivity
+ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:28:9-32:51
+	android:label
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:31:13-58
+	android:configChanges
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:30:13-91
+	android:theme
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:32:13-48
+	android:name
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:29:13-70
+activity#com.naver.maps.map.app.OpenSourceLicenseActivity
+ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:33:9-37:51
+	android:label
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:36:13-65
+	android:configChanges
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:35:13-91
+	android:theme
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:37:13-48
+	android:name
+		ADDED from [com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:34:13-76
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1da86a45a12dd77e49bb6d007f1c05e7/play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1da86a45a12dd77e49bb6d007f1c05e7/play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1da86a45a12dd77e49bb6d007f1c05e7/play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+activity#com.kakao.auth.authorization.authcode.KakaoWebViewActivity
+ADDED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:12:9-19:20
+	android:label
+		ADDED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:16:13-59
+	android:launchMode
+		ADDED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:17:13-43
+	android:windowSoftInputMode
+		ADDED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:18:13-55
+	android:exported
+		ADDED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:15:13-37
+	android:configChanges
+		ADDED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:14:13-59
+	android:name
+		ADDED from [com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:13:13-86

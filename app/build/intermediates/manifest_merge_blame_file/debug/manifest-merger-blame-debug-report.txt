@@ -1,0 +1,161 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.myapplication"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:6:5-67
+11-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:7:5-79
+12-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:7:22-76
+13
+14    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION" />
+14-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:8:5-86
+14-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:8:29-83
+15
+16    <uses-feature
+16-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:11:5-13:35
+17        android:glEsVersion="0x00020000"
+17-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:12:9-41
+18        android:required="true" />
+18-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:13:9-32
+19    <uses-feature
+19-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:14:5-16:36
+20        android:name="android.hardware.wifi"
+20-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:15:9-45
+21        android:required="false" />
+21-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:16:9-33
+22
+23    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+23-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:20:5-76
+23-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:20:22-73
+24
+25    <application
+25-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:10:5-38:19
+26        android:name="com.example.myapplication.GlobalApplication"
+26-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:11:9-42
+27        android:allowBackup="true"
+27-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:12:9-35
+28        android:appComponentFactory="whateverString"
+28-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:13:9-53
+29        android:debuggable="true"
+30        android:icon="@mipmap/ic_launcher"
+30-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:14:9-43
+31        android:label="@string/app_name"
+31-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:15:9-41
+32        android:roundIcon="@mipmap/ic_launcher_round"
+32-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:16:9-54
+33        android:supportsRtl="true"
+33-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:17:9-35
+34        android:testOnly="true"
+35        android:theme="@style/AppTheme" >
+35-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:18:9-40
+36        <activity
+36-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:20:9-22:67
+37            android:name="com.example.myapplication.GPSActivity"
+37-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:21:13-40
+38            android:label="@string/title_activity_gps" />
+38-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:22:13-55
+39        <activity android:name="com.example.myapplication.HomeActivity" />
+39-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:23:9-49
+39-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:23:19-47
+40        <activity android:name="com.example.myapplication.MainActivity" >
+40-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:24:9-30:20
+40-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:24:19-47
+41            <intent-filter>
+41-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:25:13-29:29
+42                <action android:name="android.intent.action.MAIN" />
+42-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:26:17-69
+42-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:26:25-66
+43
+44                <category android:name="android.intent.category.LAUNCHER" />
+44-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:28:17-77
+44-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:28:27-74
+45            </intent-filter>
+46        </activity>
+47
+48        <meta-data
+48-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:32:9-34:53
+49            android:name="com.kakao.sdk.AppKey"
+49-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:33:13-48
+50            android:value="@string/kakao_app_key" />
+50-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:34:13-50
+51        <meta-data
+51-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:35:9-37:42
+52            android:name="com.naver.maps.map.CLIENT_ID"
+52-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:36:13-56
+53            android:value="iadjhv32ui" />
+53-->/Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:37:13-39
+54
+55        <activity
+55-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:23:9-27:51
+56            android:name="com.naver.maps.map.app.LegendActivity"
+56-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:24:13-65
+57            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+57-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:25:13-91
+58            android:label="@string/navermap_legend"
+58-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:26:13-52
+59            android:theme="@style/navermap_app" />
+59-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:27:13-48
+60        <activity
+60-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:28:9-32:51
+61            android:name="com.naver.maps.map.app.LegalNoticeActivity"
+61-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:29:13-70
+62            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+62-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:30:13-91
+63            android:label="@string/navermap_legal_notice"
+63-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:31:13-58
+64            android:theme="@style/navermap_app" />
+64-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:32:13-48
+65        <activity
+65-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:33:9-37:51
+66            android:name="com.naver.maps.map.app.OpenSourceLicenseActivity"
+66-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:34:13-76
+67            android:configChanges="screenSize|smallestScreenSize|screenLayout|orientation"
+67-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:35:13-91
+68            android:label="@string/navermap_open_source_license"
+68-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:36:13-65
+69            android:theme="@style/navermap_app" />
+69-->[com.naver.maps:map-sdk:3.6.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/AndroidManifest.xml:37:13-48
+70        <activity
+70-->[com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+71            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+71-->[com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+72            android:exported="false"
+72-->[com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+73            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+73-->[com.google.android.gms:play-services-base:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+74
+75        <meta-data
+75-->[com.google.android.gms:play-services-basement:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1da86a45a12dd77e49bb6d007f1c05e7/play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+76            android:name="com.google.android.gms.version"
+76-->[com.google.android.gms:play-services-basement:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1da86a45a12dd77e49bb6d007f1c05e7/play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+77            android:value="@integer/google_play_services_version" />
+77-->[com.google.android.gms:play-services-basement:16.0.1] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/1da86a45a12dd77e49bb6d007f1c05e7/play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+78
+79        <activity
+79-->[com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:12:9-19:20
+80            android:name="com.kakao.auth.authorization.authcode.KakaoWebViewActivity"
+80-->[com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:13:13-86
+81            android:configChanges="orientation|screenSize"
+81-->[com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:14:13-59
+82            android:exported="false"
+82-->[com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:15:13-37
+83            android:label="@string/com_kakao_login_button"
+83-->[com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:16:13-59
+84            android:launchMode="singleTop"
+84-->[com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:17:13-43
+85            android:windowSoftInputMode="adjustResize" >
+85-->[com.kakao.sdk:auth:1.14.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/AndroidManifest.xml:18:13-55
+86        </activity>
+87    </application>
+88
+89</manifest>

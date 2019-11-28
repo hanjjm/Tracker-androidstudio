@@ -1,0 +1,4 @@
+#Thu Nov 28 22:28:32 KST 2019
+base.0=/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
