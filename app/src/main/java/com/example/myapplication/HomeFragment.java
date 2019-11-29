@@ -37,7 +37,9 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLDecoder;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.net.ssl.HttpsURLConnection;
@@ -83,6 +85,8 @@ public class HomeFragment extends Fragment implements LocationListener {
     LocationManager lm;
     TextView textView;
     ToggleButton toggleButton;
+    double longitude;
+    double latitude;
 
     MyTimer myTimer;
 
@@ -163,27 +167,8 @@ public class HomeFragment extends Fragment implements LocationListener {
                 }
             }
         });
-        final String url = "http://mr-y.asuscomm.com:3000/users ";
 
-        final ContentValues values = new ContentValues();
-        values.put("id", "204");
-        values.put("age", "24");
-        values.put("gender", "W");
 
-        values.put("id", "444");
-        values.put("gender", "white Yeon");
-
-        Timer timer = new Timer();
-
-        TimerTask TT = new TimerTask() {
-            @Override
-            public void run() {
-             /*   NetworkTask networkTask = new NetworkTask(url, values);
-                networkTask.execute();*/
-            }
-        };
-
-        timer.schedule(TT, 0, 5000); //Timer 실행
         //timer.cancel();//타이머 종료
 
         // AsyncTask를 통해 HttpURLConnection 수행.
@@ -303,11 +288,35 @@ public class HomeFragment extends Fragment implements LocationListener {
         public void onLocationChanged(Location location) {
 
             Log.d("test", "onLocationChanged, location:" + location);
-            double longitude = location.getLongitude(); //경도
-            double latitude = location.getLatitude();   //위도
+            final double longitude = location.getLongitude(); //경도
+            final double latitude = location.getLatitude();   //위도
             double altitude = location.getAltitude();   //고도
             float accuracy = location.getAccuracy();    //정확도
             String provider = location.getProvider();   //위치제공자
+
+            Timer timer = new Timer();
+
+            TimerTask TT = new TimerTask() {
+                @Override
+                public void run() {
+                    SimpleDateFormat timestamp = new SimpleDateFormat ( "yyyy-MM-dd HH:mm:ss");
+                    Date time = new Date();
+                    String now = timestamp.format(time);
+                    Log.d("now", now);
+
+                    final String url = "http://mr-y.asuscomm.com:3000/upload";
+                    final ContentValues values = new ContentValues();
+                    //values.put("id", GPSActivity.email);
+                    values.put("id", "95");
+                    values.put("location", "(" + longitude + ", " + latitude + ")");
+                    values.put("time", "" + now + "");
+
+                    NetworkTask networkTask = new NetworkTask(url, values);
+                    networkTask.execute();
+                }
+            };
+
+            timer.schedule(TT, 0, 20000); //Timer 실행
 
             textView.setText("위치정보 : " + provider + "\n위도 : " + longitude + "\n경도 : " + latitude
                     + "\n고도 : " + altitude + "\n정확도 : "  + accuracy);
