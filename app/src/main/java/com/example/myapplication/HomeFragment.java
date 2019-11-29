@@ -85,8 +85,8 @@ public class HomeFragment extends Fragment implements LocationListener {
     LocationManager lm;
     TextView textView;
     ToggleButton toggleButton;
-    double longitude;
-    double latitude;
+    double longitude = 0;
+    double latitude = 0;
 
     MyTimer myTimer;
 
@@ -168,81 +168,38 @@ public class HomeFragment extends Fragment implements LocationListener {
             }
         });
 
+        Timer timer = new Timer();
+
+        TimerTask TT = new TimerTask() {
+            @Override
+            public void run() {
+                SimpleDateFormat timestamp = new SimpleDateFormat ( "yyyy-MM-dd HH:mm:ss");
+                Date time = new Date();
+                String now = timestamp.format(time);
+                Log.d("now", now);
+
+                final String url = "http://mr-y.asuscomm.com:3000/upload";
+                final ContentValues values = new ContentValues();
+                //values.put("id", GPSActivity.email);
+                values.put("id", "95");
+                values.put("location", "(" + longitude + ", " + latitude + ")");
+                values.put("time", "" + now + "");
+
+                Log.d("qqq1 ", "(" + longitude + ", " + latitude + ")");
+                Log.d("qqq2", now);
+
+                if(longitude != 0) {
+                    NetworkTask networkTask = new NetworkTask(url, values);
+                    networkTask.execute();
+                }
+            }
+        };
+
+        timer.schedule(TT, 0, 10000); //Timer 실행
 
         //timer.cancel();//타이머 종료
-
-        // AsyncTask를 통해 HttpURLConnection 수행.
-        /*NetworkTask networkTask = new NetworkTask(url, values);
-        networkTask.execute();*/
-
         return view;
     }
-
-
-
-
-    public static String postData(){
-        InputStream is = null;
-        String result = "";
-        try {
-            URL urlCon = new URL("http://mr-y.asuscomm.com:3000/upload");
-            HttpURLConnection httpCon = (HttpURLConnection)urlCon.openConnection();
-
-            String json = "";
-
-            // build jsonObject
-            JSONObject jsonObject = new JSONObject();
-            jsonObject.accumulate("age", "12");
-            jsonObject.accumulate("gender", "123");
-            jsonObject.accumulate("POINT", "(123.13, 125.41");
-            jsonObject.accumulate("time", "123");
-
-            // convert JSONObject to JSON to String
-            json = jsonObject.toString();
-
-
-            // ObjectMapper mapper = new ObjectMapper();
-            // json = mapper.writeValueAsString(person);
-
-            // Set some headers to inform server about the type of the content
-            httpCon.setRequestProperty("Accept", "application/json");
-            httpCon.setRequestProperty("Content-type", "application/json");
-
-            // OutputStream으로 POST 데이터를 넘겨주겠다는 옵션.
-            httpCon.setDoOutput(true);
-            // InputStream으로 서버로 부터 응답을 받겠다는 옵션.
-            httpCon.setDoInput(true);
-
-            OutputStream os = httpCon.getOutputStream();
-            os.write(json.getBytes("euc-kr"));
-            os.flush();
-            // receive response as inputStream
-            try {
-                is = httpCon.getInputStream();
-                // convert inputstream to string
-                //if(is != null)
-                //    result = convertInputStreamToString(is);
-                //else
-                 //   result = "Did not work!";
-            }
-            catch (IOException e) {
-                e.printStackTrace();
-            }
-            finally {
-                httpCon.disconnect();
-            }
-        }
-        catch (IOException e) {
-            e.printStackTrace();
-        }
-        catch (Exception e) {
-            Log.d("InputStream", e.getLocalizedMessage());
-        }
-
-        return result;
-
-    }
-
 
     // TODO: Rename method, update argument and hook method into UI event
     public void onButtonPressed(Uri uri) {
@@ -288,35 +245,13 @@ public class HomeFragment extends Fragment implements LocationListener {
         public void onLocationChanged(Location location) {
 
             Log.d("test", "onLocationChanged, location:" + location);
-            final double longitude = location.getLongitude(); //경도
-            final double latitude = location.getLatitude();   //위도
+            longitude = location.getLongitude(); //경도
+            latitude = location.getLatitude();   //위도
             double altitude = location.getAltitude();   //고도
             float accuracy = location.getAccuracy();    //정확도
             String provider = location.getProvider();   //위치제공자
 
-            Timer timer = new Timer();
 
-            TimerTask TT = new TimerTask() {
-                @Override
-                public void run() {
-                    SimpleDateFormat timestamp = new SimpleDateFormat ( "yyyy-MM-dd HH:mm:ss");
-                    Date time = new Date();
-                    String now = timestamp.format(time);
-                    Log.d("now", now);
-
-                    final String url = "http://mr-y.asuscomm.com:3000/upload";
-                    final ContentValues values = new ContentValues();
-                    //values.put("id", GPSActivity.email);
-                    values.put("id", "95");
-                    values.put("location", "(" + longitude + ", " + latitude + ")");
-                    values.put("time", "" + now + "");
-
-                    NetworkTask networkTask = new NetworkTask(url, values);
-                    networkTask.execute();
-                }
-            };
-
-            timer.schedule(TT, 0, 20000); //Timer 실행
 
             textView.setText("위치정보 : " + provider + "\n위도 : " + longitude + "\n경도 : " + latitude
                     + "\n고도 : " + altitude + "\n정확도 : "  + accuracy);
@@ -409,113 +344,6 @@ public class HomeFragment extends Fragment implements LocationListener {
 
     }
 
-
-    public static void postData2() {
-        String URL = "http://mr-y.asuscomm.com:3000/upload";
-        HttpClient httpclient = new DefaultHttpClient();
-        HttpPost httppost = new HttpPost(URL);
-
-        try {
-            // 아래처럼 적절히 응용해서 데이터형식을 넣으시고
-            List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>(2);
-            nameValuePairs.add(new BasicNameValuePair("age", "12345"));
-            nameValuePairs.add(new BasicNameValuePair("gender", "man"));
-            nameValuePairs.add(new BasicNameValuePair("POINT", "(12345, 1231)"));
-            nameValuePairs.add(new BasicNameValuePair("time", "123"));
-            httppost.setEntity(new UrlEncodedFormEntity(nameValuePairs));
-
-            //HTTP Post 요청 실행
-            HttpResponse response = httpclient.execute(httppost);
-
-        } catch (ClientProtocolException e) {
-            // TODO Auto-generated catch block
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-        }
-    }
-
-
-    public static void postData3() {
-        try {
-            URL url = new URL("http://mr-y.asuscomm.com:3000/upload");
-            HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("POST"); //전송방식
-            connection.setDoOutput(true);       //데이터를 쓸 지 설정
-            connection.setDoInput(true);        //데이터를 읽어올지 설정
-            connection.setRequestProperty("Content-Type", "application/json");
-            connection.setRequestProperty("Accept", "application/json");
-
-            JSONObject jsonObject = new JSONObject();
-            jsonObject.accumulate("age", "12");
-            jsonObject.accumulate("gender", "123");
-            jsonObject.accumulate("POINT", "(123.13, 125.41");
-            jsonObject.accumulate("time", "123");
-
-            // convert JSONObject to JSON to String
-            String json = jsonObject.toString();
-            Log.d("abc", json);
-            OutputStreamWriter os = new OutputStreamWriter(connection.getOutputStream());
-            os.write(json); // 출력 스트림에 출력.
-            os.flush(); // 출력 스트림을 플러시(비운다)하고 버퍼링 된 모든 출력 바이트를 강제 실행.
-            os.close();
-        } catch(Exception e) {
-            e.printStackTrace();
-        }
-
-
-    }
-
-
-/*    private void postData() {
-
-        HttpClient client = new DefaultHttpClient();
-        HttpPost post = new HttpPost("http://192.168.219.101:8090/readus/insertuserinfo.do");
-        *//*ArrayList<> nameValues =new ArrayList<>();*//*
-
-
-        JSONObject data = new JSONObject();
-        try {
-
-        } catch (JSONException e) {
-            e.getStackTrace();
-        }
-
-        try {*/
-    //Post방식으로 넘길 값들을 각각 지정을 해주어야 한다.
-            /*nameValues.add(new BasicNameValuePair(
-                    "userId", URLDecoder.decode(userId, "UTF-8")));
-            nameValues.add(new BasicNameValuePair(
-                    "userName", URLDecoder.decode(userName, "UTF-8")));*/
-           /* data.accumulate("age", 123);
-            data.accumulate("gender", "man");
-            data.accumulate("X", "12.3451");
-            data.accumulate("Y", "324.232");
-            data.accumulate("time", "12:22:33");
-            //HttpPost에 넘길 값을들 Set해주기
-            post.setEntity(
-                    new UrlEncodedFormEntity(
-                            data, "UTF-8"));
-        } catch (Exception ex) {
-            Log.e("Insert Log", ex.toString());
-        }
-
-        try {
-            //설정한 URL을 실행시키기
-            HttpResponse response = client.execute(post);
-            //통신 값을 받은 Log 생성. (200이 나오는지 확인할 것~) 200이 나오면 통신이 잘 되었다는 뜻!
-            Log.i("Insert Log", "response.getStatusCode:" + response.getStatusLine().getStatusCode());
-
-        } catch (ClientProtocolException e) {
-            e.printStackTrace();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }*/
-
-
-
     public class NetworkTask extends AsyncTask<Void, Void, String> {
 
         private String url;
@@ -541,13 +369,8 @@ public class HomeFragment extends Fragment implements LocationListener {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-            //doInBackground()로 부터 리턴된 값이 onPostExecute()의 매개변수로 넘어오므로 s를 출력한다.
-            //tv_outPut.setText(s);
         }
     }
-
-
-
 
     public class RequestHttpURLConnection {
 

@@ -208,7 +208,7 @@ public class MainActivity extends Activity {
                 Log.d("gender : ", response.getKakaoAccount().getGender().toString());
                 final ContentValues values = new ContentValues();
                 //values.put("id", response.getKakaoAccount().getEmail());
-                values.put("id", "999");
+                values.put("id", "99");
                 values.put("age", age);
                 values.put("gender", response.getKakaoAccount().getGender().toString());
 
