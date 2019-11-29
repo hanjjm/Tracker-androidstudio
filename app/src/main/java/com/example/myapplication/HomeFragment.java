@@ -178,8 +178,8 @@ public class HomeFragment extends Fragment implements LocationListener {
         TimerTask TT = new TimerTask() {
             @Override
             public void run() {
-                NetworkTask networkTask = new NetworkTask(url, values);
-                networkTask.execute();
+             /*   NetworkTask networkTask = new NetworkTask(url, values);
+                networkTask.execute();*/
             }
         };
 
