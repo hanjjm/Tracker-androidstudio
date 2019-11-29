@@ -188,7 +188,7 @@ public class MainActivity extends Activity {
              //   Log.d("user id : " ,response.getId());
 
                 Log.d("email: " , response.getKakaoAccount().getAgeRange().toString());
-                //여기서 보내기
+                //여기서 보내
                // Log.d("gender : " , response.getKakaoAccount().getAgeRange().toString());
                // Toast.makeText(MainActivity.this, response.getKakaoAccount().getGender().toString(), Toast.LENGTH_SHORT).show();
             }

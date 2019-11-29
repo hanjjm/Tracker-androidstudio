@@ -164,19 +164,21 @@ public class MyPageFragment extends Fragment {
                 public void run() {
                     // TODO Auto-generated method stub
                     try {
-                        Log.d("thread? : ", "얼마나 실행...");
+                        //Log.d("thread? : ", "얼마나 실행...");
                         URL url = new URL(GPSActivity.userImage);
                         InputStream is = url.openStream();
                         final Bitmap bm = BitmapFactory.decodeStream(is);
+                        final Bitmap resized = Bitmap.createScaledBitmap(bm, 800, 800, true);
+
 
                         handler.post(new Runnable() {
-
                             @Override
                             public void run() {
-                                imageButton.setImageBitmap(bm);
+
+                                imageButton.setImageBitmap(resized);
                             }
                         });
-                        imageButton.setImageBitmap(bm);
+                        imageButton.setImageBitmap(resized);
                     } catch (Exception e) {
                     }
                 }

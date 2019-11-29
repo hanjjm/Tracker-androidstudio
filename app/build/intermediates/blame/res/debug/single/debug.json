@@ -68,12 +68,12 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/3637ad7267aebf352258eb32830074ae/support-media-compat-28.0.0/res/layout/notification_template_big_media_custom.xml"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-xxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-mdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_notification_action.xml.flat",
@@ -128,12 +128,12 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-v21/abc_dialog_material_background.xml"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_mtrl_snackbar_background.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/drawable/mtrl_snackbar_background.xml"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_btn_default_mtrl_shape.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_mtrl_snackbar_background.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/drawable/mtrl_snackbar_background.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/animator_design_fab_hide_motion_spec.xml.flat",
@@ -176,20 +176,20 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/res/drawable-hdpi-v4/notification_bg_low_normal.9.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_navermap_zoom_out_normal.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-xhdpi-v4/navermap_zoom_out_normal.png"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-xxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_navermap_zoom_out_normal.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-xhdpi-v4/navermap_zoom_out_normal.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_activity_kakao_webview.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/67eac0130d1dc44a858647beda130916/auth-1.14.0/res/layout/activity_kakao_webview.xml"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-mdpi-v4/abc_btn_check_to_on_mtrl_000.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_navermap_zoom_div.png.flat",
@@ -204,16 +204,16 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/color-v23/abc_color_highlight_material.xml"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_small_material.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_ratingbar_small_material.xml"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/color_mtrl_chip_text_color.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/color/mtrl_chip_text_color.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/res/drawable-mdpi-v4/notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/color_mtrl_chip_text_color.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/color/mtrl_chip_text_color.xml"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_ratingbar_small_material.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_navermap_default_marker_icon_lightblue.png.flat",
@@ -324,12 +324,12 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_light.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_list_selector_holo_light.xml"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_notification_media_cancel_action.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/3637ad7267aebf352258eb32830074ae/support-media-compat-28.0.0/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_list_selector_holo_light.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_list_selector_holo_light.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
@@ -404,16 +404,16 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/res/drawable-hdpi-v4/common_google_signin_btn_text_dark_normal_background.9.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_selector_login_button.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/e5af4aea09c806c22727988587b55398/usermgmt-1.14.0/res/drawable/selector_login_button.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_abc_alert_dialog_title_material.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_selector_login_button.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/e5af4aea09c806c22727988587b55398/usermgmt-1.14.0/res/drawable/selector_login_button.xml"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ab_share_pack_mtrl_alpha.9.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-hdpi-v4/abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
@@ -520,12 +520,12 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-xxhdpi-v4/navermap_scale_bar_dark.9.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_layout_login_dialog.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/e5af4aea09c806c22727988587b55398/usermgmt-1.14.0/res/layout/layout_login_dialog.xml"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-hdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_googleg_standard_color_18.png.flat",
@@ -556,16 +556,16 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-xxhdpi-v4/navermap_zoom_in_pressed.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_cab_background_internal_bg.xml"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/color_mtrl_chip_ripple_color.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/color/mtrl_chip_ripple_color.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_design_ic_visibility_off.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/drawable-xhdpi-v4/design_ic_visibility_off.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/color_mtrl_chip_ripple_color.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/color/mtrl_chip_ripple_color.xml"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_cab_background_internal_bg.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_cab_background_internal_bg.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_design_ic_visibility.png.flat",
@@ -620,16 +620,16 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-hdpi-v4/abc_scrubber_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_design_navigation_item.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/layout/design_navigation_item.xml"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_edit_text_material.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_edit_text_material.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_icon_light.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/res/drawable/common_google_signin_btn_icon_light.xml"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_edit_text_material.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_edit_text_material.xml"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_design_navigation_item.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/layout/design_navigation_item.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_navermap_default_info_window_background.9.png.flat",
@@ -720,16 +720,16 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-hdpi-v4/abc_btn_switch_to_on_mtrl_00001.9.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-small-v4_kakaotalk_icon.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d16ef2356e25f991472789823598456b/util-1.14.0/res/drawable-small-v4/kakaotalk_icon.png"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_navermap_location_overlay_icon.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-xxxhdpi-v4/navermap_location_overlay_icon.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_navermap_default_marker_icon_yellow.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-mdpi-v4/navermap_default_marker_icon_yellow.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_navermap_location_overlay_icon.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-xxxhdpi-v4/navermap_location_overlay_icon.png"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-small-v4_kakaotalk_icon.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/d16ef2356e25f991472789823598456b/util-1.14.0/res/drawable-small-v4/kakaotalk_icon.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -784,24 +784,24 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/res/drawable/common_google_signin_btn_text_dark.xml"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_switch_thumb_material.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-hdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_notification_template_part_chronometer.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/res/layout/notification_template_part_chronometer.xml"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_navermap_zoom_in_normal.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-xhdpi-v4/navermap_zoom_in_normal.png"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-xxxhdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_navermap_zoom_in_normal.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-xhdpi-v4/navermap_zoom_in_normal.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_navermap_default_marker_icon_gray.png.flat",
@@ -900,12 +900,12 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/anim/design_snackbar_out.xml"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-xxxhdpi-v4/abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-xhdpi-v4/abc_textfield_search_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/color-v23_abc_tint_default.xml.flat",
@@ -964,12 +964,12 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/drawable/ic_mtrl_chip_close_circle.xml"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_design_navigation_menu_item.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/layout/design_navigation_menu_item.xml"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_design_navigation_menu_item.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2762df556eb00935af44a9cef289bcc5/design-28.0.0/res/layout/design_navigation_menu_item.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_kakao_login_button_background.9.png.flat",
@@ -1080,16 +1080,16 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-hdpi-v4/navermap_zoom_out_pressed.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_textfield_search_material.xml.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_textfield_search_material.xml"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_navermap_location_face_normal.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-xhdpi-v4/navermap_location_face_normal.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable_abc_textfield_search_material.xml.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable/abc_textfield_search_material.xml"
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_off_mtrl_alpha.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/2ad9bfadafd430f8dbad1412b3cf8d16/appcompat-v7-28.0.0/res/drawable-xhdpi-v4/abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/layout_abc_action_mode_close_item_material.xml.flat",
@@ -1108,12 +1108,12 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-hdpi-v4/navermap_default_background_dark.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_full_open_on_phone.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/res/drawable-hdpi-v4/common_full_open_on_phone.png"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_navermap_scale_bar_dark.9.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-xhdpi-v4/navermap_scale_bar_dark.9.png"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_common_full_open_on_phone.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/919abf3f5c043fe43ce39056b98cdb51/play-services-base-16.0.1/res/drawable-hdpi-v4/common_full_open_on_phone.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_navermap_default_marker_icon_green.png.flat",
@@ -1348,12 +1348,12 @@
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-xhdpi-v4/navermap_location_face_pressed.png"
     },
     {
-        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
-    },
-    {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_navermap_location_no_follow_pressed.png.flat",
         "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/742c4f4ae05dbc8e84b5a06b977d843a/map-sdk-3.6.0/res/drawable-hdpi-v4/navermap_location_no_follow_pressed.png"
+    },
+    {
+        "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "/Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/res/drawable-mdpi-v4/notification_bg_low_normal.9.png"
     },
     {
         "merged": "/Users/kimhanju/Desktop/SellMe-androidstudio/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
