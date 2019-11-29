@@ -18,6 +18,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -136,7 +137,7 @@ public class HomeFragment extends Fragment implements LocationListener {
 
         textView = (TextView) view.findViewById(R.id.resultText);
         textView.setText("위치정보 미수신중");
-
+        final TextView text = (TextView) view.findViewById(R.id.textView1);
         toggleButton = (ToggleButton) view.findViewById(R.id.toggle1);
 
         final LocationManager lm = (LocationManager) getActivity().getSystemService(Context.LOCATION_SERVICE);
@@ -165,6 +166,13 @@ public class HomeFragment extends Fragment implements LocationListener {
                     }
                 }catch(SecurityException ex){
                 }
+            }
+        });
+
+        toggleButton.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                text.setText("Status: " + isChecked);
             }
         });
 

@@ -995,8 +995,8 @@ public final class R {
         public static final int notification_template_icon_low_bg = 0x7f0800c9;
         public static final int notification_tile_bg = 0x7f0800ca;
         public static final int notify_panel_notification_icon_bg = 0x7f0800cb;
-        public static final int tooltip_frame_dark = 0x7f0800cf;
-        public static final int tooltip_frame_light = 0x7f0800d0;
+        public static final int tooltip_frame_dark = 0x7f0800d2;
+        public static final int tooltip_frame_light = 0x7f0800d3;
     }
     public static final class id {
         private id() {}
@@ -1131,28 +1131,28 @@ public final class R {
         public static final int text2 = 0x7f0900e8;
         public static final int textSpacerNoButtons = 0x7f0900e9;
         public static final int textSpacerNoTitle = 0x7f0900ea;
-        public static final int text_input_password_toggle = 0x7f0900ec;
-        public static final int textinput_counter = 0x7f0900ed;
-        public static final int textinput_error = 0x7f0900ee;
-        public static final int textinput_helper_text = 0x7f0900ef;
-        public static final int time = 0x7f0900f0;
-        public static final int title = 0x7f0900f1;
-        public static final int titleDividerNoCustom = 0x7f0900f2;
-        public static final int title_template = 0x7f0900f3;
-        public static final int top = 0x7f0900f5;
-        public static final int topPanel = 0x7f0900f6;
-        public static final int touch_outside = 0x7f0900f7;
-        public static final int transition_current_scene = 0x7f0900f8;
-        public static final int transition_layout_save = 0x7f0900f9;
-        public static final int transition_position = 0x7f0900fa;
-        public static final int transition_scene_layoutid_cache = 0x7f0900fb;
-        public static final int transition_transform = 0x7f0900fc;
-        public static final int uniform = 0x7f0900fd;
-        public static final int unlabeled = 0x7f0900fe;
-        public static final int up = 0x7f0900ff;
-        public static final int view_offset_helper = 0x7f090101;
-        public static final int visible = 0x7f090102;
-        public static final int wrap_content = 0x7f090107;
+        public static final int text_input_password_toggle = 0x7f0900ed;
+        public static final int textinput_counter = 0x7f0900ee;
+        public static final int textinput_error = 0x7f0900ef;
+        public static final int textinput_helper_text = 0x7f0900f0;
+        public static final int time = 0x7f0900f1;
+        public static final int title = 0x7f0900f2;
+        public static final int titleDividerNoCustom = 0x7f0900f3;
+        public static final int title_template = 0x7f0900f4;
+        public static final int top = 0x7f0900f6;
+        public static final int topPanel = 0x7f0900f7;
+        public static final int touch_outside = 0x7f0900f8;
+        public static final int transition_current_scene = 0x7f0900f9;
+        public static final int transition_layout_save = 0x7f0900fa;
+        public static final int transition_position = 0x7f0900fb;
+        public static final int transition_scene_layoutid_cache = 0x7f0900fc;
+        public static final int transition_transform = 0x7f0900fd;
+        public static final int uniform = 0x7f0900fe;
+        public static final int unlabeled = 0x7f0900ff;
+        public static final int up = 0x7f090100;
+        public static final int view_offset_helper = 0x7f090102;
+        public static final int visible = 0x7f090103;
+        public static final int wrap_content = 0x7f090108;
     }
     public static final class integer {
         private integer() {}
