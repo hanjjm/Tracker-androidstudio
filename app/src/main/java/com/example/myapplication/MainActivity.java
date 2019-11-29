@@ -358,27 +358,4 @@ public class MainActivity extends Activity {
         }
 
     }
-/*    private void handleScopeError(UserAccount account) {
-        List<String> neededScopes = new ArrayList<>();
-        if (account.needsScopeAgeRange()) {
-            neededScopes.add("ageRange");
-        }
-        if (account.needsScopeGender()) {
-            neededScopes.add("gender");
-        }
-        Session.getCurrentSession().updateScopes(this, neededScopes, new
-                AccessTokenCallback() {
-                    @Override
-                    public void onAccessTokenReceived(AccessToken accessToken) {
-                        // 유저에게 성공적으로 동의를 받음. 토큰을 재발급 받게 됨.
-                    }
-
-                    @Override
-                    public void onAccessTokenFailure(ErrorResult errorResult) {
-                        // 동의 얻기 실패
-                    }
-                });
-    }*/
-
-
 }
