@@ -1097,6 +1097,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back2
 drawable background
+drawable background2
 drawable btn_x
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
@@ -1323,6 +1324,7 @@ id line1
 id line3
 id listMode
 id list_item
+id loginButton
 id login_close_button
 id login_close_layout
 id login_list_view

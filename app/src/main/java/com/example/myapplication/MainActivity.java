@@ -208,9 +208,9 @@ public class MainActivity extends Activity {
                 Log.d("gender : ", response.getKakaoAccount().getGender().toString());
                 final ContentValues values = new ContentValues();
                 //values.put("id", response.getKakaoAccount().getEmail());
-                values.put("id", "99");
+                values.put("id", response.getKakaoAccount().getEmail());
                 values.put("age", age);
-                values.put("gender", response.getKakaoAccount().getGender().toString());
+                values.put("gender", response.getKakaoAccount().getGender().toString().substring(0, 1));
 
                 NetworkTask networkTask = new NetworkTask(url, values);
                 networkTask.execute();

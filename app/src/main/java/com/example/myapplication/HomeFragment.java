@@ -188,8 +188,8 @@ public class HomeFragment extends Fragment implements LocationListener {
 
                 final String url = "http://mr-y.asuscomm.com:3000/upload";
                 final ContentValues values = new ContentValues();
-                //values.put("id", GPSActivity.email);
-                values.put("id", "95");
+                values.put("id", GPSActivity.email);
+              // values.put("id", "95");
                 values.put("location", "(" + longitude + ", " + latitude + ")");
                 values.put("time", "" + now + "");
 

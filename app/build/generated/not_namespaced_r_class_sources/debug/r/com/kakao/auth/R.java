@@ -75,30 +75,30 @@ public final class R {
     public static final class drawable {
         private drawable() {}
 
-        public static final int kakao_account_button_background = 0x7f080084;
-        public static final int kakao_account_logo = 0x7f080085;
-        public static final int kakao_cancel_button_background = 0x7f080086;
-        public static final int kakao_default_profile_image = 0x7f080087;
-        public static final int kakao_editable_profile = 0x7f080088;
-        public static final int kakao_login_bar = 0x7f080089;
-        public static final int kakao_login_button_background = 0x7f08008a;
-        public static final int kakao_login_symbol = 0x7f08008b;
-        public static final int kakao_profile_boxbg = 0x7f08008c;
-        public static final int kakaoaccount_icon = 0x7f08008d;
-        public static final int kakaostory_icon = 0x7f08008e;
-        public static final int kakaotalk_icon = 0x7f08008f;
-        public static final int notification_action_background = 0x7f0800c0;
-        public static final int notification_bg = 0x7f0800c1;
-        public static final int notification_bg_low = 0x7f0800c2;
-        public static final int notification_bg_low_normal = 0x7f0800c3;
-        public static final int notification_bg_low_pressed = 0x7f0800c4;
-        public static final int notification_bg_normal = 0x7f0800c5;
-        public static final int notification_bg_normal_pressed = 0x7f0800c6;
-        public static final int notification_icon_background = 0x7f0800c7;
-        public static final int notification_template_icon_bg = 0x7f0800c8;
-        public static final int notification_template_icon_low_bg = 0x7f0800c9;
-        public static final int notification_tile_bg = 0x7f0800ca;
-        public static final int notify_panel_notification_icon_bg = 0x7f0800cb;
+        public static final int kakao_account_button_background = 0x7f080085;
+        public static final int kakao_account_logo = 0x7f080086;
+        public static final int kakao_cancel_button_background = 0x7f080087;
+        public static final int kakao_default_profile_image = 0x7f080088;
+        public static final int kakao_editable_profile = 0x7f080089;
+        public static final int kakao_login_bar = 0x7f08008a;
+        public static final int kakao_login_button_background = 0x7f08008b;
+        public static final int kakao_login_symbol = 0x7f08008c;
+        public static final int kakao_profile_boxbg = 0x7f08008d;
+        public static final int kakaoaccount_icon = 0x7f08008e;
+        public static final int kakaostory_icon = 0x7f08008f;
+        public static final int kakaotalk_icon = 0x7f080090;
+        public static final int notification_action_background = 0x7f0800c1;
+        public static final int notification_bg = 0x7f0800c2;
+        public static final int notification_bg_low = 0x7f0800c3;
+        public static final int notification_bg_low_normal = 0x7f0800c4;
+        public static final int notification_bg_low_pressed = 0x7f0800c5;
+        public static final int notification_bg_normal = 0x7f0800c6;
+        public static final int notification_bg_normal_pressed = 0x7f0800c7;
+        public static final int notification_icon_background = 0x7f0800c8;
+        public static final int notification_template_icon_bg = 0x7f0800c9;
+        public static final int notification_template_icon_low_bg = 0x7f0800ca;
+        public static final int notification_tile_bg = 0x7f0800cb;
+        public static final int notify_panel_notification_icon_bg = 0x7f0800cc;
     }
     public static final class id {
         private id() {}
@@ -119,19 +119,19 @@ public final class R {
         public static final int kakao_login_activity_progress_bar = 0x7f090065;
         public static final int line1 = 0x7f09006a;
         public static final int line3 = 0x7f09006b;
-        public static final int normal = 0x7f0900a2;
-        public static final int notification_background = 0x7f0900a3;
-        public static final int notification_main_column = 0x7f0900a4;
-        public static final int notification_main_column_container = 0x7f0900a5;
-        public static final int progress_bar = 0x7f0900b0;
-        public static final int right_icon = 0x7f0900b6;
-        public static final int right_side = 0x7f0900b7;
-        public static final int tag_transition_group = 0x7f0900e4;
-        public static final int text = 0x7f0900e7;
-        public static final int text2 = 0x7f0900e8;
-        public static final int time = 0x7f0900f1;
-        public static final int title = 0x7f0900f2;
-        public static final int webview = 0x7f090104;
+        public static final int normal = 0x7f0900a3;
+        public static final int notification_background = 0x7f0900a4;
+        public static final int notification_main_column = 0x7f0900a5;
+        public static final int notification_main_column_container = 0x7f0900a6;
+        public static final int progress_bar = 0x7f0900b1;
+        public static final int right_icon = 0x7f0900b7;
+        public static final int right_side = 0x7f0900b8;
+        public static final int tag_transition_group = 0x7f0900e5;
+        public static final int text = 0x7f0900e8;
+        public static final int text2 = 0x7f0900e9;
+        public static final int time = 0x7f0900f2;
+        public static final int title = 0x7f0900f3;
+        public static final int webview = 0x7f090105;
     }
     public static final class integer {
         private integer() {}
