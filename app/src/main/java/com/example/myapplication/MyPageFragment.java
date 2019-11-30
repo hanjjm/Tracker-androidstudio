@@ -93,7 +93,7 @@ public class MyPageFragment extends Fragment {
 
         LinkImage(myImage);
         textView.setText(GPSActivity.email);
-        userName.setText(GPSActivity.nickname + "님 안녕하세요.");
+        userName.setText(GPSActivity.nickname);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override

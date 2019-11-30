@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="kakao_app_key">274e57b9d986e93b4e6b6d585d78dc9e</string>
-    <string name="title_activity_gps">Tracker</string>
+    <string name="title_activity_gps">ㅤㅤㅤㅤㅤㅤㅤTracker</string>
     <string name="title_home">GPS</string>
     <string name="title_dashboard">Map</string>
     <string name="title_notifications">My Page</string>

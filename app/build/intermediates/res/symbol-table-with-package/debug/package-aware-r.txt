@@ -1146,6 +1146,10 @@ drawable kakao_profile_boxbg
 drawable kakaoaccount_icon
 drawable kakaostory_icon
 drawable kakaotalk_icon
+drawable lin3
+drawable line
+drawable line2
+drawable line4
 drawable mtrl_snackbar_background
 drawable mtrl_tabs_default_indicator
 drawable navermap_compass
@@ -1311,6 +1315,8 @@ id icon_only
 id ifRoom
 id image
 id imageView4
+id imageView5
+id imageView6
 id info
 id invisible
 id italic

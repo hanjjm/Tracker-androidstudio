@@ -49,7 +49,7 @@ public final class R {
     public static final class id {
         private id() {}
 
-        public static final int kakao_login_activity_progress_bar = 0x7f090065;
+        public static final int kakao_login_activity_progress_bar = 0x7f090067;
     }
     public static final class layout {
         private layout() {}

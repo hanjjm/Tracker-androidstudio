@@ -36,14 +36,21 @@
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             app:srcCompat="@drawable/kakao_default_profile_image"
-                            android:background="#FFFFF5EE"
+                            android:background="#FFFFFF"
                             android:id="@+id/myImage"
                             android:layout_weight="5"/>
 
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/lin3" />
+
                         <EditText
                             android:gravity="center"
-                            android:background="#F1B0B0"
-                            android:textColor="#FFFFFF"
+                            android:background="#FFFFFF"
+                            android:textColor="#424242"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:inputType="textPersonName"
@@ -53,10 +60,17 @@
                             android:focusableInTouchMode="false"
                             android:layout_weight="1" />
 
+                        <ImageView
+                            android:id="@+id/imageView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:background="#FFFFFF"
+                            android:src="@drawable/lin3" />
+
                         <TextView
                             android:gravity="center"
-                            android:background="#D68684"
-                            android:textColor="#FFFFFF"
+                            android:background="#FFFFFF"
+                            android:textColor="#424242"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
                             android:id="@+id/emailText"
@@ -66,7 +80,7 @@
                         <Button
                             android:text="Logout"
                             android:textSize="16dp"
-                            android:background="#735360"
+                            android:background="#6E6E6E"
                             android:textColor="#FFFFFF"
                             android:layout_width="match_parent"
                             android:layout_height="0dp"
