@@ -111,14 +111,14 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] /Users/kimhanju/.gr
 	android:supportsRtl
 		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:15:9-41
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:15:9-32
 	android:appComponentFactory
 		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:13:9-53
 		REJECTED from [com.android.support:support-compat:28.0.0] /Users/kimhanju/.gradle/caches/transforms-2/files-2.1/f14724208b5bfeeef0d6bdefe649bca7/support-compat-28.0.0/AndroidManifest.xml:22:18-91
 	android:roundIcon
-		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:16:9-54
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:16:9-60
 	android:icon
-		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:14:9-43
+		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:14:9-55
 	android:allowBackup
 		ADDED from /Users/kimhanju/Desktop/SellMe-androidstudio/app/src/main/AndroidManifest.xml:12:9-35
 	android:theme

@@ -68,7 +68,7 @@ public class MainActivity extends Activity {
 
         requestMe();
 
-      // onClickLogout(); //이걸 주석 빼면 재로그인 해야함.
+       onClickLogout(); //이걸 주석 빼면 재로그인 해야함.
 
     }
 

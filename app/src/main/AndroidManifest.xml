@@ -11,9 +11,9 @@
         android:name=".GlobalApplication"
         android:allowBackup="true"
         android:appComponentFactory="whateverString"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/ic_launcher_foreground3"
+        android:label="Tracker"
+        android:roundIcon="@mipmap/ic_launcher_foreground3"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:replace="android:appComponentFactory">
