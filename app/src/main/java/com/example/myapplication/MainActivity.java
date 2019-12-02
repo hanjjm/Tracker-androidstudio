@@ -1,32 +1,22 @@
 package com.example.myapplication;
 
 import android.content.ContentValues;
-import android.content.Context;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
-import android.util.Base64;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.kakao.auth.AccessTokenCallback;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.auth.KakaoSDK;
 import com.kakao.auth.Session;
-import com.kakao.auth.authorization.accesstoken.AccessToken;
 import com.kakao.network.ErrorResult;
-import com.kakao.network.NetworkTask;
 import com.kakao.usermgmt.UserManagement;
 import com.kakao.usermgmt.callback.LogoutResponseCallback;
 import com.kakao.usermgmt.callback.MeResponseCallback;
 import com.kakao.usermgmt.callback.MeV2ResponseCallback;
 import com.kakao.usermgmt.response.MeV2Response;
-import com.kakao.usermgmt.response.model.User;
-import com.kakao.usermgmt.response.model.UserAccount;
 import com.kakao.usermgmt.response.model.UserProfile;
 import com.kakao.util.exception.KakaoException;
 import com.kakao.util.helper.log.Logger;
@@ -38,18 +28,14 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-
-import static com.kakao.util.helper.Utility.getPackageInfo;
-
 public class MainActivity extends Activity {
     private SessionCallback callback;
     private int index;
+
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -154,7 +140,7 @@ public class MainActivity extends Activity {
         finish();
     }
 
-/*    public static String getKeyHash(final Context context) {
+/*    public static String getKeyHash(final Context context) {  //해시키 얻는 함
         PackageInfo packageInfo = getPackageInfo(context, PackageManager.GET_SIGNATURES);
         if (packageInfo == null)
             return null;
@@ -196,10 +182,6 @@ public class MainActivity extends Activity {
 
             @Override
             public void onSuccess(MeV2Response response) {
-             //   Log.d("user id : " ,response.getId());
-
-                //여기서 보내
-
                 final String url = "http://mr-y.asuscomm.com:3000/users ";
 
                 String age = response.getKakaoAccount().getAgeRange().toString().substring(4, 6);
@@ -207,15 +189,12 @@ public class MainActivity extends Activity {
                 Log.d("age: " , age);
                 Log.d("gender : ", response.getKakaoAccount().getGender().toString());
                 final ContentValues values = new ContentValues();
-                //values.put("id", response.getKakaoAccount().getEmail());
                 values.put("id", response.getKakaoAccount().getEmail());
                 values.put("age", age);
                 values.put("gender", response.getKakaoAccount().getGender().toString().substring(0, 1));
 
                 NetworkTask networkTask = new NetworkTask(url, values);
                 networkTask.execute();
-               // Log.d("gender : " , response.getKakaoAccount().getAgeRange().toString());
-               // Toast.makeText(MainActivity.this, response.getKakaoAccount().getGender().toString(), Toast.LENGTH_SHORT).show();
             }
 
         });
@@ -256,9 +235,6 @@ public class MainActivity extends Activity {
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
-
-            //doInBackground()로 부터 리턴된 값이 onPostExecute()의 매개변수로 넘어오므로 s를 출력한다.
-            //tv_outPut.setText(s);
         }
     }
 
@@ -354,7 +330,6 @@ public class MainActivity extends Activity {
             }
 
             return null;
-
         }
 
     }
