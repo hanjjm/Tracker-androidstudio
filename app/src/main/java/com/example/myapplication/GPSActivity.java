@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.annotation.NonNull;
 import android.util.Log;
 import android.view.MenuItem;
-import android.widget.Toast;
 
 public class GPSActivity extends AppCompatActivity implements HomeFragment.OnFragmentInteractionListener,
                                                               GPSFragment.OnFragmentInteractionListener,
