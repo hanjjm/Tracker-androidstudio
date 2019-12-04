@@ -75,7 +75,6 @@ public class MainActivity extends Activity {
     private class SessionCallback implements ISessionCallback {
         @Override
         public void onSessionOpened() {
-            //Toast.makeText(MainActivity.this, "성공", Toast.LENGTH_SHORT).show();
             //goHomeActivity();
             //redirectSignActivity();
 
@@ -97,18 +96,12 @@ public class MainActivity extends Activity {
                     String userEmail = userProfile.getEmail();
                     String imagePath = userProfile.getProfileImagePath();
 
-                    Log.d("12321", "1");
-
-                  /*  UserAccount a = new UserAccount();
-                    a.getGender()*/
-                    // String age = userProfile.get
                     String id = userProfile.getUUID();
                     Intent intent = new Intent(MainActivity.this, GPSActivity.class);
                     intent.putExtra("NickName", userNickname);
                     intent.putExtra("Email", userEmail);
                     intent.putExtra("picture", imagePath);
                     intent.putExtra("id", id);
-                    //intent.putExtra("age", age);
 
                     Log.d("이미지", imagePath);
                     startActivity(intent);
@@ -166,8 +159,6 @@ public class MainActivity extends Activity {
         keys.add("kakao_account.email");
         keys.add("kakao_account.gender");
         keys.add("kakao_account.age_range");
-        //keys.add("kakao_account.age_range");
-        //keys.add("kakao_account.gender");
         UserManagement.getInstance().me(keys, new MeV2ResponseCallback() {
             @Override
             public void onFailure(ErrorResult errorResult) {
